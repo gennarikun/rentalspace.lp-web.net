@@ -4891,3 +4891,134 @@ background-color: #fff;
     /*# sourceURL=lightning-design-style-inline-css */
   
 
+/* ========================================================================= */
+/* ヘッダー・フッター デザイン刷新 (2026-04-04)                             */
+/* ========================================================================= */
+
+/* --- ヘッダーナビ: アイコン + テキスト 2段構成 (PC) --- */
+@media (min-width: 768px) {
+  .siteHeader .gMenu > li > a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 10px 12px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+
+  .siteHeader .gMenu > li > a .gMenu_icon {
+    display: block;
+    font-size: 18px;
+    color: var(--ats-primary, #5d4037);
+    transition: color 0.3s ease, transform 0.3s ease;
+    line-height: 1;
+  }
+
+  .siteHeader .gMenu > li > a .gMenu_name {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--ats-text-body, #4a3c31);
+    white-space: nowrap;
+    letter-spacing: 0.02em;
+    transition: color 0.3s ease;
+  }
+
+  .siteHeader .gMenu > li > a:hover .gMenu_icon {
+    color: var(--ats-accent, #c9a961);
+    transform: translateY(-2px);
+  }
+
+  .siteHeader .gMenu > li > a:hover .gMenu_name,
+  .siteHeader .gMenu > li > a:focus .gMenu_name {
+    color: var(--ats-accent, #c9a961);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+
+  /* ナビ全体の配置 */
+  .siteHeader .gMenu {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0;
+    flex-wrap: nowrap;
+  }
+
+  /* Lightningテーマ由来の旧ホバー下線(::before)を完全に無効化 */
+  .siteHeader .gMenu > li::before {
+    display: none !important;
+  }
+
+  /* liの区切り線 */
+  .siteHeader .gMenu > li {
+    position: relative;
+  }
+  .siteHeader .gMenu > li + li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 25%;
+    height: 50%;
+    width: 1px;
+    background-color: var(--ats-border, #e0d6c8);
+  }
+}
+
+/* --- ヘッダーナビ: SP時はナビゲーション本体を非表示 (ハンバーガーメニューを利用) --- */
+@media (max-width: 991px) {
+  .siteHeader .gMenu_outer {
+    display: none; /* Removed !important to allow proper inheritance and JS control */
+  }
+}
+
+/* --- モバイルナビ内のアイコン --- */
+#vk-mobile-nav .menu-item a i.fa-solid {
+  margin-right: 8px;
+  width: 20px;
+  text-align: center;
+  color: var(--ats-accent, #c9a961);
+}
+
+/* --- ヘッダーロゴ下のアクセントライン --- */
+.siteHeader .siteHeadContainer {
+  border-bottom: 2px solid var(--ats-accent, #c9a961);
+}
+
+/* --- フッター: ダークブラウンデザイン --- */
+.siteFooter {
+  background-color: var(--ats-primary-dark, #3e2723);
+  border-top: 3px solid var(--ats-accent, #c9a961);
+  padding-top: 0;
+}
+
+.siteFooter .footerMenu {
+  padding: 25px 0 15px;
+}
+
+.siteFooter .footerMenu .menu > li {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.siteFooter .footerMenu .menu > li > a {
+  color: rgba(255, 255, 255, 0.85);
+  transition: color 0.3s ease;
+  font-size: 0.85rem;
+}
+
+.siteFooter .footerMenu .menu > li > a:hover {
+  color: var(--ats-accent, #c9a961);
+}
+
+.siteFooter .copySection {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 15px 0;
+}
+
+.siteFooter .copySection p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.75rem;
+  margin: 0;
+}

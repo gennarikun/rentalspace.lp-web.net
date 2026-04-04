@@ -1,0 +1,403 @@
+@charset "UTF-8";
+
+/* ========================================================================= */
+/* パトロンページ専用 スタイルシート
+/* すべてのスタイルを .lp-patron-wrapper 配下に限定
+/* ========================================================================= */
+
+.lp-patron-wrapper {
+  background-color: #faf8f5;
+}
+
+/* -------------------------------------
+ *  セクション余白・背景色
+ *  .atelier-takana-sensei スコープ外なので
+ *  ats-section, bg-* をこのページ用に再定義
+ * ------------------------------------- */
+.lp-patron-wrapper .lp-contact-section {
+  padding: 80px 0;
+}
+
+.lp-patron-wrapper .ats-section {
+  padding: 80px 0;
+  width: 100%;
+  position: relative;
+}
+
+.lp-patron-wrapper .bg-beige {
+  background-color: var(--ats-bg-beige, #f8f4ed);
+}
+
+.lp-patron-wrapper .bg-white {
+  background-color: #fff;
+}
+
+.lp-patron-wrapper .bg-wood {
+  background-color: var(--ats-bg-wood, #f0ebe3);
+}
+
+/* -------------------------------------
+ *  見出しリセット（WordPress由来のborder等を消す）
+ * ------------------------------------- */
+.lp-patron-wrapper h2,
+.lp-patron-wrapper h3 {
+  border: none;
+  border-bottom: none;
+}
+
+/* -------------------------------------
+ *  テキスト配置（スマホ: 左揃え / PC: 中央揃え）
+ * ------------------------------------- */
+.lp-patron-wrapper .lp-patron-text-responsive {
+  text-align: left;
+}
+@media (min-width: 768px) {
+  .lp-patron-wrapper .lp-patron-text-responsive {
+    text-align: center;
+  }
+}
+
+/* -------------------------------------
+ *  段落の余白 (.lp-contact-text-body が無い場所用)
+ * ------------------------------------- */
+.lp-patron-wrapper .lp-patron-mb {
+  margin-bottom: 1.5em;
+}
+
+.lp-patron-wrapper .lp-patron-mb:last-child {
+  margin-bottom: 0;
+}
+
+/* テキスト装飾 */
+.lp-patron-wrapper .lp-patron-accent {
+  color: var(--ats-accent, #c9a961);
+}
+
+.lp-patron-wrapper .lp-patron-bold {
+  font-weight: bold;
+}
+
+.lp-patron-wrapper .lp-patron-lead {
+  font-weight: bold;
+  color: var(--ats-primary, #5d4037);
+  margin-bottom: 1.5em;
+}
+
+/* 猫紹介のリード文余白 */
+.lp-patron-wrapper .lp-patron-cats-lead {
+  margin-bottom: 40px;
+}
+
+/* -------------------------------------
+ *  コンセプトボックス（画像＋テキスト横並び）
+ *  style.css の .atelier-takana-sensei 配下限定を
+ *  このページ用に再定義
+ * ------------------------------------- */
+.lp-patron-wrapper .ats-concept-box {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 768px) {
+  .lp-patron-wrapper .ats-concept-box {
+    flex-direction: row;
+  }
+}
+
+.lp-patron-wrapper .ats-concept-text {
+  background-color: var(--ats-bg-warm, #fff8f0);
+  padding: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1em;
+}
+@media (min-width: 768px) {
+  .lp-patron-wrapper .ats-concept-text {
+    padding: 4rem;
+    width: 50%;
+  }
+}
+
+.lp-patron-wrapper .ats-concept-img {
+  flex: 1;
+}
+.lp-patron-wrapper .ats-concept-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* すりだねボックスの上余白 */
+.lp-patron-wrapper .lp-patron-suridane-box {
+  margin-top: 60px;
+}
+
+/* -------------------------------------
+ *  見出しスタイル（lp-patron-subtitle）
+ * ------------------------------------- */
+.lp-patron-wrapper .lp-patron-subtitle {
+  font-family: "Yu Mincho", "YuMincho", "Hiragino Mincho ProN", serif;
+  font-size: 1.4em;
+  font-weight: 600;
+  color: var(--ats-primary, #5d4037);
+  margin-bottom: 20px;
+  padding-bottom: 0;
+}
+
+/* -------------------------------------
+ *  料金プラン（Pricing Cards）
+ * ------------------------------------- */
+.lp-patron-wrapper .lp-patron-plan-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch;
+  margin-top: 40px;
+}
+
+.lp-patron-wrapper .lp-patron-plan-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+  width: calc(33.333% - 14px);
+  min-width: 280px;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.lp-patron-wrapper .lp-patron-plan-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.lp-patron-wrapper .plan-header {
+  background: #ffab40;
+  color: #fff;
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.lp-patron-wrapper .plan-premium {
+  background: #ff6f00;
+}
+
+.lp-patron-wrapper .plan-price {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #333;
+  padding: 25px 20px;
+  border-bottom: 1px dashed #eee;
+}
+
+.lp-patron-wrapper .plan-features {
+  padding: 25px 20px;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 料金プランキャプション */
+.lp-patron-wrapper .lp-patron-plan-caption {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* -------------------------------------
+ *  パトロン特徴リスト
+ * ------------------------------------- */
+.lp-patron-wrapper .lp-patron-points {
+  max-width: 600px;
+  margin: 20px auto 0;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+  border-left: 5px solid #ffab40;
+}
+.lp-patron-wrapper .lp-patron-points li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 24px;
+  line-height: 1.5;
+  list-style: none;
+}
+.lp-patron-wrapper .lp-patron-points li:last-child {
+  margin-bottom: 0;
+}
+.lp-patron-wrapper .lp-patron-points li::before {
+  content: "✔";
+  color: #ffab40;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: bold;
+}
+
+/* -------------------------------------
+ *  Square決済見出し
+ * ------------------------------------- */
+.lp-patron-wrapper .lp-patron-payment-heading {
+  font-family: "Yu Mincho", "YuMincho", "Hiragino Mincho ProN", serif;
+  font-size: 1.4em;
+  font-weight: 600;
+  text-align: center;
+  color: var(--ats-primary, #5d4037);
+  margin-top: 60px;
+  margin-bottom: 30px;
+  border: none;
+}
+
+/* -------------------------------------
+ *  Square決済ボタン群 (CTA Cards)
+ * ------------------------------------- */
+.lp-patron-wrapper .lp-patron-payment-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.lp-patron-wrapper .lp-patron-payment-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  width: calc(33.333% - 20px);
+  min-width: 260px;
+  max-width: 320px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.lp-patron-wrapper .payment-img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  background: #f9f9f9;
+}
+.lp-patron-wrapper .payment-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lp-patron-wrapper .payment-info {
+  text-align: center;
+  width: 100%;
+}
+
+.lp-patron-wrapper .payment-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.lp-patron-wrapper .payment-price {
+  font-size: 1.4rem;
+  color: #d32f2f;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.lp-patron-wrapper .payment-btn {
+  display: inline-block;
+  width: 100%;
+  background: #111;
+  color: #fff;
+  padding: 14px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: background 0.3s ease;
+  border: none;
+  text-align: center;
+}
+
+.lp-patron-wrapper .payment-btn:hover {
+  background: #444;
+  color: #fff;
+}
+
+/* -------------------------------------
+ *  企業向けテーブルの余白補正
+ * ------------------------------------- */
+.lp-patron-wrapper .lp-patron-sponsor-info {
+  margin-top: 30px;
+}
+
+/* -------------------------------------
+ *  代表挨拶の署名
+ * ------------------------------------- */
+.lp-patron-wrapper .lp-patron-signature {
+  text-align: right;
+  margin-top: 30px;
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  .lp-patron-wrapper .lp-patron-signature {
+    text-align: left;
+  }
+}
+
+/* -------------------------------------
+ *  アクセスセクションの余白
+ * ------------------------------------- */
+.lp-patron-wrapper .access-section {
+  padding: 80px 0;
+}
+
+/* -------------------------------------
+ *  レスポンシブ調整
+ * ------------------------------------- */
+@media screen and (max-width: 768px) {
+  .lp-patron-wrapper .lp-contact-section {
+    padding: 50px 0;
+  }
+
+  .lp-patron-wrapper .ats-section {
+    padding: 50px 0;
+  }
+
+  .lp-patron-wrapper .access-section {
+    padding: 50px 0;
+  }
+
+  .lp-patron-wrapper .lp-patron-plan-card {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .lp-patron-wrapper .lp-patron-payment-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .lp-patron-wrapper .lp-hero-main {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+
+  .lp-patron-wrapper .lp-patron-suridane-box {
+    margin-top: 40px;
+  }
+}

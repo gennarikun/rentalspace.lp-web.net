@@ -1,71 +1,12 @@
-<!DOCTYPE html>
-
-<html lang="ja">
-<head>
-<meta charset="utf-8"/>
-<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>河口湖の無料の保護猫カフェ・コミュニティスペース・コワーキングスペース・レンタルスペース【アトリエ高菜先生】</title>
-<meta content="max-image-preview:large" name="robots"/>
-<link href="//webfonts.xserver.jp" rel="dns-prefetch"/>
-<link href="/feed" rel="alternate" title="河口湖の無料の保護猫カフェ・コミュニティスペース・コワーキングスペース・レンタルスペース【アトリエ高菜先生】 » フィード" type="application/rss+xml"/>
-<link href="/comments/feed" rel="alternate" title="河口湖の無料の保護猫カフェ・コミュニティスペース・コワーキングスペース・レンタルスペース【アトリエ高菜先生】 » コメントフィード" type="application/rss+xml"/>
-<link href="/wp-json/oembed/1.0/embed?url=%2F" rel="alternate" title="oEmbed (JSON)" type="application/json+oembed"/>
-<link href="/wp-json/oembed/1.0/embed?url=%2F&amp;format=xml" rel="alternate" title="oEmbed (XML)" type="text/xml+oembed"/>
-
-
-
-
-
-
-<link href="./css/lib.min.css" id="lib-css" media="all" rel="stylesheet" type="text/css"/>
-
-
-<script id="lib-js" src="./js/lib.min.js" type="text/javascript"></script>
-<script id="typesquare_std-js" src="//webfonts.xserver.jp/js/xserverv3.js?fadein=0&amp;ver=2.0.9" type="text/javascript"></script>
-<link href="/wp-json/" rel="https://api.w.org/"/>
-<link href="/wp-json/wp/v2/pages/5672" rel="alternate" title="JSON" type="application/json"/>
-<link href="/xmlrpc.php?rsd" rel="EditURI" title="RSD" type="application/rsd+xml"/>
-<meta content="WordPress 6.9.4" name="generator"/>
-<link href="/" rel="canonical"/>
-<link href="/" rel="shortlink"/>
-<link href="./css/style.css" id="style-css" media="all" rel="stylesheet" type="text/css"/>
-<script id="script-js" src="./js/script.js" type="text/javascript"></script>
-
-<link href="/wp-content/uploads/2025/01/cropped-%E9%AB%98%E8%8F%9C%E3%81%AE%E3%83%AD%E3%82%B4-16-32x32.png" rel="icon" sizes="32x32"/>
-<link href="/wp-content/uploads/2025/01/cropped-%E9%AB%98%E8%8F%9C%E3%81%AE%E3%83%AD%E3%82%B4-16-192x192.png" rel="icon" sizes="192x192"/>
-<link href="/wp-content/uploads/2025/01/cropped-%E9%AB%98%E8%8F%9C%E3%81%AE%E3%83%AD%E3%82%B4-16-180x180.png" rel="apple-touch-icon"/>
-<meta content="/wp-content/uploads/2025/01/cropped-高菜のロゴ-16-270x270.png" name="msapplication-TileImage"/>
-
-</head>
-<body class="home wp-singular page-template-default page page-id-5672 wp-theme-lightning fa_v7_css bootstrap4 device-pc">
-<a class="skip-link screen-reader-text" href="#main">コンテンツへスキップ</a>
-<a class="skip-link screen-reader-text" href="#vk-mobile-nav">ナビゲーションに移動</a>
-<header class="siteHeader">
-<div class="container siteHeadContainer">
-<div class="navbar-header">
-<h1 class="navbar-brand siteHeader_logo">
-<a href="/">
-<span><img alt="河口湖の無料の保護猫カフェ・コミュニティスペース・コワーキングスペース・レンタルスペース【アトリエ高菜先生】" src="./assets/f7b213_FUJIYA-3.png"/></span>
-</a>
-</h1>
-</div>
-<div class="gMenu_outer" id="gMenu_outer">
-<nav class="menu-%e3%81%ad%e3%82%b3%e3%83%af%e3%83%bc%e3%82%ad%e3%83%b3%e3%82%b0%e3%82%b9%e3%83%9a%e3%83%bc%e3%82%b9%e5%a7%8b%e3%82%81%e3%81%be%e3%81%99-container">
-<ul class="menu gMenu vk-menu-acc" id="menu-%e3%81%ad%e3%82%b3%e3%83%af%e3%83%bc%e3%82%ad%e3%83%b3%e3%82%b0%e3%82%b9%e3%83%9a%e3%83%bc%e3%82%b9%e5%a7%8b%e3%82%81%e3%81%be%e3%81%99">
-<li class="menu-item menu-item-type-post_type menu-item-object-page" id="menu-item-5369"><a href="/patron"><strong class="gMenu_name">パトロン制度のご案内</strong></a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page" id="menu-item-5995"><a href="/weekend-staff"><strong class="gMenu_name">猫と遊ぶとご飯無料！</strong></a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page" id="menu-item-5942"><a href="/contact"><strong class="gMenu_name">お問い合わせ</strong></a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page" id="menu-item-5915"><a href="/gallery"><strong class="gMenu_name">ギャラリー</strong></a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page" id="menu-item-5976"><a href="/reviews"><strong class="gMenu_name">お客様の声</strong></a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page" id="menu-item-5899"><a href="/aboutus"><strong class="gMenu_name">経営理念</strong></a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-5672 current_page_item" id="menu-item-5938"><a href="/"><strong class="gMenu_name">トップ</strong></a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom" id="menu-item-6001"><a href="https://houtoutaiken.lp-web.net/2026/02/12/web-recruit/"><strong class="gMenu_name">Webデザイナー募集</strong></a></li>
-</ul>
-</nav>
-</div>
-</div>
-</header>
+<?php
+$pageTitle = '河口湖の無料の保護猫カフェ・コミュニティスペース・コワーキングスペース・レンタルスペース【アトリエ高菜先生】';
+$basePath = './';
+$canonicalUrl = '/';
+$bodyClass = 'home wp-singular page-template-default page page-id-5672 wp-theme-lightning fa_v7_css bootstrap4 device-pc';
+$pageCSS = [];
+include 'head-common.php';
+include 'header.php';
+?>
 <div class="section siteContent">
 <div class="container">
 <div class="row">
@@ -937,66 +878,4 @@
 </div>
 </div>
 </div>
-<footer class="section siteFooter">
-<div class="footerMenu">
-<div class="container">
-<nav class="menu-%e3%81%ad%e3%82%b3%e3%83%af%e3%83%bc%e3%82%ad%e3%83%b3%e3%82%b0%e3%82%b9%e3%83%9a%e3%83%bc%e3%82%b9%e5%a7%8b%e3%82%81%e3%81%be%e3%81%99-container">
-<ul class="menu nav" id="menu-%e3%81%ad%e3%82%b3%e3%83%af%e3%83%bc%e3%82%ad%e3%83%b3%e3%82%b0%e3%82%b9%e3%83%9a%e3%83%bc%e3%82%b9%e5%a7%8b%e3%82%81%e3%81%be%e3%81%99-1">
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5369" id="menu-item-5369"><a href="/patron">パトロン制度のご案内</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5995" id="menu-item-5995"><a href="/weekend-staff">猫と遊ぶとご飯無料！</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5942" id="menu-item-5942"><a href="/contact">お問い合わせ</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5915" id="menu-item-5915"><a href="/gallery">ギャラリー</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5976" id="menu-item-5976"><a href="/reviews">お客様の声</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5899" id="menu-item-5899"><a href="/aboutus">経営理念</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-5672 current_page_item menu-item-5938" id="menu-item-5938"><a aria-current="page" href="/">トップ</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6001" id="menu-item-6001"><a href="https://houtoutaiken.lp-web.net/2026/02/12/web-recruit/">Webデザイナー募集</a></li>
-</ul>
-</nav>
-</div>
-</div>
-<div class="container sectionBox copySection text-center">
-<p>Copyright © 河口湖の無料の保護猫カフェ・コミュニティスペース・コワーキングスペース・レンタルスペース【アトリエ高菜先生】 All Rights Reserved.</p>
-<p>Powered by <a href="https://wordpress.org/">WordPress</a> &amp; <a href="https://lightning.nagoya/ja/" target="_blank" title="Free WordPress Theme Lightning"> Lightning Theme</a> by Vektor,Inc. technology.</p>
-</div>
-</footer>
-<div class="vk-mobile-nav-menu-btn" id="vk-mobile-nav-menu-btn">MENU</div>
-<div class="vk-mobile-nav vk-mobile-nav-drop-in" id="vk-mobile-nav">
-<nav class="vk-mobile-nav-menu-outer" role="navigation">
-<ul class="vk-menu-acc menu" id="menu-%e3%81%ad%e3%82%b3%e3%83%af%e3%83%bc%e3%82%ad%e3%83%b3%e3%82%b0%e3%82%b9%e3%83%9a%e3%83%bc%e3%82%b9%e5%a7%8b%e3%82%81%e3%81%be%e3%81%99-2">
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5369"><a href="/patron">パトロン制度のご案内</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5995"><a href="/weekend-staff">猫と遊ぶとご飯無料！</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5942"><a href="/contact">お問い合わせ</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5915"><a href="/gallery">ギャラリー</a>
-</li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5976"><a href="/reviews">お客様の声</a>
-</li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5899"><a href="/aboutus">経営理念</a>
-</li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-5672 current_page_item menu-item-5938">
-<a aria-current="page" href="/">トップ</a>
-</li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6001"><a href="https://houtoutaiken.lp-web.net/2026/02/12/web-recruit/">Webデザイナー募集</a></li>
-</ul>
-</nav>
-</div>
-<script type="speculationrules">
-{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/lightning/*","/wp-content/themes/lightning/_g2/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
-</script>
-<script id="lightning-js-js-extra" type="text/javascript">
-    /* <![CDATA[ */
-    var lightningOpt = { "header_scrool": "1" };
-    //# sourceURL=lightning-js-js-extra
-    /* ]]> */
-  </script>
-<script id="wp-emoji-settings" type="application/json">
-{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"/wp-includes/js/wp-emoji-release.min.js?ver=6.9.4"}}
-</script>
-<script type="module">
-    /* <![CDATA[ */
-    /*! This file is auto-generated */
-    const a = JSON.parse(document.getElementById("wp-emoji-settings").textContent), o = (window._wpemojiSettings = a, "wpEmojiSettingsSupports"), s = ["flag", "emoji"]; function i(e) { try { var t = { supportTests: e, timestamp: (new Date).valueOf() }; sessionStorage.setItem(o, JSON.stringify(t)) } catch (e) { } } function c(e, t, n) { e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0); t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data); e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0); const a = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data); return t.every((e, t) => e === a[t]) } function p(e, t) { e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0); var n = e.getImageData(16, 16, 1, 1); for (let e = 0; e < n.data.length; e++)if (0 !== n.data[e]) return !1; return !0 } function u(e, t, n, a) { switch (t) { case "flag": return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\udde8\ud83c\uddf6", "\ud83c\udde8\u200b\ud83c\uddf6") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"); case "emoji": return !a(e, "\ud83e\u1fac8") }return !1 } function f(e, t, n, a) { let r; const o = (r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : document.createElement("canvas")).getContext("2d", { willReadFrequently: !0 }), s = (o.textBaseline = "top", o.font = "600 32px Arial", {}); return e.forEach(e => { s[e] = t(o, e, n, a) }), s } function r(e) { var t = document.createElement("script"); t.src = e, t.defer = !0, document.head.appendChild(t) } a.supports = { everything: !0, everythingExceptFlag: !0 }, new Promise(t => { let n = function () { try { var e = JSON.parse(sessionStorage.getItem(o)); if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests } catch (e) { } return null }(); if (!n) { if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try { var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), c.toString(), p.toString()].join(",") + "));", a = new Blob([e], { type: "text/javascript" }); const r = new Worker(URL.createObjectURL(a), { name: "wpTestEmojiSupports" }); return void (r.onmessage = e => { i(n = e.data), r.terminate(), t(n) }) } catch (e) { } i(n = f(s, u, c, p)) } t(n) }).then(e => { for (const n in e) a.supports[n] = e[n], a.supports.everything = a.supports.everything && a.supports[n], "flag" !== n && (a.supports.everythingExceptFlag = a.supports.everythingExceptFlag && a.supports[n]); var t; a.supports.everythingExceptFlag = a.supports.everythingExceptFlag && !a.supports.flag, a.supports.everything || ((t = a.source || {}).concatemoji ? r(t.concatemoji) : t.wpemoji && t.twemoji && (r(t.twemoji), r(t.wpemoji))) });
-    //# sourceURL=/wp-includes/js/wp-emoji-loader.min.js
-    /* ]]> */
-  </script>
-</body>
-</html>
+<?php include "footer.php"; ?>
