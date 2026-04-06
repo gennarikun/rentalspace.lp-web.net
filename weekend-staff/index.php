@@ -3,7 +3,7 @@ $pageTitle = '猫と遊ぶとご飯が無料に！河口湖の猫カフェボラ
 $basePath = '../';
 $canonicalUrl = '/weekend-staff';
 $bodyClass = 'wp-singular page-template-default page page-id-5984 wp-theme-lightning fa_v7_css bootstrap4 device-pc';
-$pageCSS = ['css/lp-recruit.css', 'css/lp-recruit-2.css'];
+$pageCSS = ['css/lp-recruit.css'];
 include '../head-common.php';
 include '../header.php';
 ?>
