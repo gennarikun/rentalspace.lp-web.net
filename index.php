@@ -7,6 +7,300 @@ $pageCSS = [];
 include 'head-common.php';
 include 'header.php';
 ?>
+<style>
+/* ==== お知らせバー（8/2生誕祭告知） ==== */
+.ats-announce-bar {
+  background: linear-gradient(90deg, #8C1D28, #D7263D);
+  color: #fff;
+  padding: 10px 16px;
+  text-align: center;
+}
+.ats-announce-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.ats-announce-badge {
+  background: #F0B429;
+  color: #060A24;
+  font-weight: 800;
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+}
+.ats-announce-text {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+.ats-announce-text a {
+  color: #FBDD8B;
+  text-decoration: underline;
+  font-weight: 800;
+}
+@media (max-width: 480px) {
+  .ats-announce-text { font-size: 12px; }
+}
+
+/* ==== 代表＆高菜先生紹介セクション（空白解消） ==== */
+.ats-story-block {
+  margin-bottom: 64px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid #eee;
+}
+.ats-story-block:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.ats-story-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+.ats-story-name {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+.ats-story-name-en {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #999;
+}
+.ats-story-role {
+  display: block;
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 6px;
+  line-height: 1.6;
+}
+.ats-story-catch {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #b9860b;
+  margin-top: 14px;
+  line-height: 1.8;
+}
+.ats-story-intro {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+.ats-story-icon {
+  flex-shrink: 0;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.ats-story-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.ats-story-desc {
+  flex: 1;
+  font-size: 0.95rem;
+  line-height: 1.9;
+  color: #444;
+}
+.ats-story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+.ats-story-list {
+  display: flex;
+  flex-direction: column;
+}
+.ats-story-item {
+  padding: 18px 4px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.ats-story-item:hover {
+  background: #fafafa;
+}
+.ats-story-item.active {
+  border-left: 3px solid #b9860b;
+  padding-left: 14px;
+  background: #fff8ec;
+}
+.ats-story-item-title {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #222;
+}
+.ats-story-item-text {
+  font-size: 0.9rem;
+  line-height: 1.85;
+  color: #555;
+}
+.ats-story-visual {
+  position: sticky;
+  top: 100px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.ats-story-img {
+  display: none;
+}
+.ats-story-img.active {
+  display: block;
+}
+.ats-story-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+.ats-story-sp-img {
+  display: none;
+}
+@media (max-width: 767px) {
+  .ats-story-grid {
+    grid-template-columns: 1fr;
+  }
+  .ats-story-visual {
+    display: none;
+  }
+  .ats-story-intro {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+  .ats-story-sp-img {
+    display: block;
+    margin-top: 14px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .ats-story-sp-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+/* ==== 100人で1匹の猫を飼う／ごはん無料のコミュニティ ==== */
+.ats-theme-box {
+  max-width: 620px;
+  margin: 40px auto 0;
+  padding: 28px 24px;
+  text-align: center;
+  background: #fff8ec;
+  border: 1px solid #eadcb8;
+  border-radius: 12px;
+}
+.ats-theme-label {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #b9860b;
+  margin-bottom: 12px;
+}
+.ats-theme-text {
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.9;
+  color: #333;
+}
+.ats-origin-box {
+  max-width: 800px;
+  margin: 32px auto 0;
+  padding: 28px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+}
+.ats-origin-title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-bottom: 14px;
+  text-align: center;
+  color: #222;
+}
+.ats-news-list {
+  list-style: none;
+  margin: 24px 0 0;
+  padding: 0;
+}
+.ats-news-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 18px;
+  background: #fff8ec;
+  border: 1px solid #eadcb8;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+.ats-news-tag {
+  flex-shrink: 0;
+  background: #b9860b;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+.ats-news-text {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #333;
+}
+.ats-concept-box-reverse {
+  flex-direction: row-reverse;
+}
+@media (max-width: 767px) {
+  .ats-concept-box-reverse {
+    flex-direction: column;
+  }
+}
+
+/* ==== フェードイン演出が発火しない場合でもコンテンツを必ず表示する保険 ==== */
+.ats-scroll-fade {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+}
+#js-ats-intro-story,
+#js-ats-intro-story *,
+#js-ats-access,
+#js-ats-access * {
+  color: inherit;
+}
+#js-ats-intro-story .ats-story-desc,
+#js-ats-intro-story .ats-story-item-text,
+#js-ats-intro-story .ats-story-name,
+#js-ats-intro-story .ats-story-item-title {
+  color: #333 !important;
+}
+</style>
+
+<div class="ats-announce-bar">
+  <div class="ats-announce-inner">
+    <span class="ats-announce-badge">お知らせ</span>
+    <p class="ats-announce-text">
+      8月2日（日）は「高菜先生 生誕祭」開催！<a href="/event/">詳しくはこちら →</a>
+    </p>
+  </div>
+</div>
+
 <div class="section siteContent">
 <div class="container">
 <div class="row">
@@ -26,6 +320,17 @@ include 'header.php';
 <path d="M0,0 C480,60 960,60 1440,0 L1440,60 L0,60 Z" fill="currentColor"></path>
 </svg></div>
 </div>
+<div class="ats-section bg-white" id="ats-news">
+<div class="ats-container ats-scroll-fade" style="max-width:720px;">
+<h2 class="ats-title">NEWS</h2>
+<ul class="ats-news-list">
+<li class="ats-news-item">
+<span class="ats-news-tag">お知らせ</span>
+<p class="ats-news-text">利用時間変更のお知らせ：これまでの11:00〜17:00から、<strong class="ats-text-accent">13:00〜18:00</strong>に変更いたします。</p>
+</li>
+</ul>
+</div>
+</div>
 <div class="ats-section bg-white">
 <p><img alt="Cat Deco" class="ats-deco-cat ats-cat-pos-hero" decoding="async" src="./assets/81f85c_23.png"/></p>
 <div class="ats-container ats-scroll-fade">
@@ -34,9 +339,36 @@ include 'header.php';
 <div class="ats-concept-text">
 <p class="ats-mb-md ats-text-justify">河口湖の保護猫がいる無料猫カフェ・コミュニティスペース「アトリエ高菜先生」では、どなたでも<strong class="ats-text-accent">無料</strong>でご利用いただけます。</p>
 <p class="ats-mb-lg ats-text-justify">弊社で行っております<strong class="ats-text-accent">保護猫活動</strong>の一環として、保護猫がいる無料コミュニティスペースで猫たちと戯れあえる環境を提供しております。</p>
+<p class="ats-mb-lg ats-text-justify">保護猫施設アトリエ高菜先生は【保護猫とは】を伝えるための無料施設です。小さなお子様、高齢の方、外国の方など、誰もが安心して過ごせる場所です。猫たちとのふれあいを通じ、人と人がゆるやかにつながり、年齢や国籍、立場を超えて集まれる居場所であることに大きな意義があります。</p>
 <p><a class="ats-btn-outline" href="#js-ats-access">アクセス<span class="ats-ml-sm">→</span></a></p>
 </div>
 <div class="ats-concept-img"><img alt="Atelier Concept" decoding="async" src="./assets/ae11a8_434123_0.jpg"/></div>
+</div>
+<div class="ats-origin-box">
+<h3 class="ats-origin-title">100人で1匹の猫を飼う、社会貢献事業の原点</h3>
+<p class="ats-text-justify">
+                    アトリエ高菜先生では「100人で１匹の猫を飼う」というコンセプトで保護活動を行っています。医療費やエサの寄付、ボランティアさん達のおかげで猫が自由に暮らせる環境となっています。
+                  </p>
+</div>
+<div class="ats-theme-box">
+<span class="ats-theme-label">THEME</span>
+<p class="ats-theme-text">
+                    1人が100匹の猫を保護するのではなく<br/>
+                    100人で1匹の猫を飼う<br/>
+                    継続的な保護猫活動
+                  </p>
+</div>
+</div>
+</div>
+<div class="ats-section bg-white">
+<div class="ats-container ats-scroll-fade">
+<h2 class="ats-title">お仲間コミュニティ</h2>
+<div class="ats-concept-box">
+<div class="ats-concept-text">
+<p class="ats-mb-md ats-text-justify">ごはん無料のボランティア制度・無料食事会は、子ども食堂から始まった、大人も来れる食事会です。ボランティアや利用者、スタッフ向けの無料食事会・BBQなどを月に複数回行っており、猫のお世話をしてくれた人たちに対するお礼でもあります。</p>
+<p class="ats-text-justify">猫を中心としたコミュニティ作りを行い、人のつながりが自然とできてその中で猫が幸せに暮らすというモデル作りを目指しています。</p>
+</div>
+<div class="ats-concept-img"><img alt="お仲間コミュニティ" decoding="async" src="./assets/9141c7_14.png"/></div>
 </div>
 </div>
 </div>
@@ -356,21 +688,11 @@ include 'header.php';
 <p class="ats-text-justify">河口湖エリアには漫画喫茶がございませんが、当店では多数ご用意しております。漫画も無料です。</p>
 </div>
 <div class="ats-feature-item">
-<div class="ats-feature-img"><img alt="体験アクティビティ" decoding="async" src="./assets/36e383_13.png"/></div>
-<h3 class="ats-feature-title">体験アクティビティ</h3>
-<p class="ats-text-justify">当店では猫カフェとしてだけではなく、施設の一部で藍染体験も行っています。体験にご参加頂いたお客様もご利用いただけます。</p>
-</div>
-<div class="ats-feature-item">
 <div class="ats-feature-img"><img alt="保護猫活動の取り組み" decoding="async" src="./assets/9141c7_14.png"/></div>
 <h3 class="ats-feature-title">保護猫活動の取り組み</h3>
 <p class="ats-text-justify">
-                          弊社サービスの売り上げの一部を保護猫活動に充てさせていただいております。保護猫である高菜先生の存在を商品やサービスを通して知ってくれた方が保護猫活動に興味を持ったり、実際に猫を保護するきっかけになればと思います。
+                          弊社への寄付や募金はすべて保護猫活動に充てさせていただいております。訪れた方が保護猫活動に興味を持ったり、実際に猫を保護するきっかけになればと考えています。
                         </p>
-</div>
-<div class="ats-feature-item">
-<div class="ats-feature-img"><img alt="姉妹店でのお食事" decoding="async" src="./assets/img_a0d004c6.png"/></div>
-<h3 class="ats-feature-title">姉妹店でのお食事</h3>
-<p class="ats-text-justify">猫カフェ向かいの姉妹店舗では吉田のうどんランチの営業を行っています。猫カフェ利用の前後にお立ち寄りいただけます。</p>
 </div>
 </div>
 </div>
@@ -519,8 +841,8 @@ include 'header.php';
 <div class="ats-faq-a">当店には専用の無料駐車場が10台ほどございます。</div>
 </div>
 <div class="ats-faq-item">
-<div class="ats-faq-q"><span class="ats-faq-q-icon">Q</span>営業時間は何時から何時までですか？</div>
-<div class="ats-faq-a">当店は午前11時から午後17時まで営業しています。</div>
+<div class="ats-faq-q"><span class="ats-faq-q-icon">Q</span>利用時間は何時から何時までですか？</div>
+<div class="ats-faq-a">当店の利用時間は13:00〜18:00です。</div>
 </div>
 <div class="ats-faq-item">
 <div class="ats-faq-q"><span class="ats-faq-q-icon">Q</span>Wi-Fiはどのような環境でしょうか？</div>
@@ -528,7 +850,7 @@ include 'header.php';
 </div>
 <div class="ats-faq-item">
 <div class="ats-faq-q"><span class="ats-faq-q-icon">Q</span>どのくらいの時間滞在できますか？</div>
-<div class="ats-faq-a">営業時間中でしたら制限はございません。</div>
+<div class="ats-faq-a">利用時間中でしたら制限はございません。</div>
 </div>
 <div class="ats-faq-item">
 <div class="ats-faq-q"><span class="ats-faq-q-icon">Q</span>飲食物は持ち込んでもいいですか？</div>
@@ -597,10 +919,14 @@ include 'header.php';
 </div>
 </div>
 <div class="ats-container ats-scroll-fade"><a class="ats-banner-link" href="/weekend-staff/"><img alt="週末限定！猫カフェサポーター募集中" decoding="async" src="./assets/e8a136_img_e0bb6c92.png"/></a></div>
-<div class="ats-separator ats-sep-wood"><svg height="60" preserveaspectratio="none" viewbox="0 0 1440 60" width="100%" xmlns="http://www.w3.org/2000/svg">
+<div class="ats-separator ats-sep-white"><svg height="60" preserveaspectratio="none" viewbox="0 0 1440 60" width="100%" xmlns="http://www.w3.org/2000/svg">
 <path d="M0,0 C480,60 960,60 1440,0 L1440,60 L0,60 Z" fill="currentColor"></path>
 </svg></div>
 </div>
+
+
+
+
 <div class="ats-section bg-wood">
 <div class="ats-container ats-scroll-fade">
 <h2 class="ats-title">ご利用のご注意事項</h2>
@@ -669,23 +995,13 @@ include 'header.php';
 <h2 class="ats-title">関連サービスの紹介</h2>
 <p class="ats-text-center ats-mb-xl">アトリエ高菜先生を運営する超超エリート株式会社・株式会社高菜先生ソーシャルエンタープライズで行っている事業の紹介です。</p>
 <div class="ats-cases-grid">
-<div class="ats-service-card"><img alt="" class="aligncenter wp-image-4899 size-full" decoding="async" height="720" loading="lazy" src="./assets/img_01b60b73.png" width="960"/>
-<div class="ats-service-overlay"></div>
-<div class="ats-service-content">
-<h3 class="ats-service-title">藍染め体験のご紹介</h3>
-<div class="ats-service-desc">
-                            当施設では、誰でも簡単に楽しめる染物体験を行っています。日本古来の伝統技術を用いた藍染は、その深い青が魅力の一つ。雨天でも楽しめるので、旅の思い出作りや新たな趣味の発見にぴったりです。<br/>
-<span class="ats-service-link">VIEW MORE →</span>
-</div>
-</div>
-</div>
 <div class="ats-service-card"><img alt="" class="aligncenter wp-image-4900 size-full" decoding="async" height="720" loading="lazy" src="./assets/img_cfa7edd5.png" width="960"/>
 <div class="ats-service-overlay"></div>
 <div class="ats-service-content">
 <h3 class="ats-service-title">調味料作り体験のご紹介</h3>
 <div class="ats-service-desc">
                             当施設の向かいの店舗では薬膳七味作りや山梨名物「すりだね」作り体験などの調味料作り体験も行っています。世界で1つだけの、自分好みの調味料を作ってお持ち帰りいただけます。<br/>
-<span class="ats-service-link">VIEW MORE →</span>
+<a href="https://umamilabo.lp-web.net/" class="ats-service-link">VIEW MORE →</a>
 </div>
 </div>
 </div>
@@ -695,17 +1011,7 @@ include 'header.php';
 <h3 class="ats-service-title">富士家のご紹介</h3>
 <div class="ats-service-desc">
                             当施設向かい店舗「富士家」では山梨の郷土料理「ほうとう」、富士吉田名物「吉田のうどん」、富士山の伏流水で作る「忍野八海蕎麦」など、山梨ならではの料理を作ってお召し上がり頂ける教室を運営しています。<br/>
-<span class="ats-service-link">VIEW MORE →</span>
-</div>
-</div>
-</div>
-<div class="ats-service-card"><img alt="ランチの紹介" class="ats-service-bg" decoding="async" src="./assets/cae6a1_470407_0.jpg"/>
-<div class="ats-service-overlay"></div>
-<div class="ats-service-content">
-<h3 class="ats-service-title">ランチの紹介</h3>
-<div class="ats-service-desc">
-                            当施設向かい店舗「マシマシ高菜先生」では、富士吉田名物の吉田のうどんと当店名物の二郎系うどんをランチ提供しております。<br/>
-<span class="ats-service-link">VIEW MORE →</span>
+<a href="https://houtoutaiken.lp-web.net/" class="ats-service-link">VIEW MORE →</a>
 </div>
 </div>
 </div>
@@ -838,8 +1144,8 @@ include 'header.php';
 </td>
 </tr>
 <tr>
-<th>営業時間</th>
-<td>AM 11:00~17:00</td>
+<th>利用時間</th>
+<td>13:00~18:00</td>
 </tr>
 <tr>
 <th>定休日</th>

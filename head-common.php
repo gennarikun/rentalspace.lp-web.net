@@ -22,6 +22,7 @@
 <link href="<?php echo $basePath; ?>assets/favicon-32x32.png" rel="icon" sizes="32x32"/>
 <link href="<?php echo $basePath; ?>assets/favicon-192x192.png" rel="icon" sizes="192x192"/>
 <link href="<?php echo $basePath; ?>assets/favicon-180x180.png" rel="apple-touch-icon"/>
+<link rel="icon" href="/assets/favicon.png" type="image/png">
 </head>
 <body class="<?php echo isset($bodyClass) ? $bodyClass : 'page wp-theme-lightning fa_v7_css bootstrap4 device-pc'; ?>">
 <a class="skip-link screen-reader-text" href="#main">コンテンツへスキップ</a>

@@ -54,29 +54,30 @@ include '../header.php';
 </div>
 </div>
 <div class="deco-paw" style="top: 100px; left: 5%; transform: rotate(-15deg);">
-<img alt="" decoding="async" src="../assets/cat_icon.png"/>
+<img alt="" decoding="async" src="../assets/volunteer.png"/>
 </div>
 <div class="deco-paw" style="top: 200px; right: 8%; transform: rotate(25deg);">
-<img alt="" decoding="async" src="../assets/cat_icon.png"/>
+<img alt="" decoding="async" src="../assets/volunteer.png"/>
 </div>
 <div class="deco-paw" style="top: 1200px; left: 10%; transform: rotate(-10deg);">
-<img alt="" decoding="async" src="../assets/cat_icon.png"/>
+<img alt="" decoding="async" src="../assets/volunteer.png"/>
 </div>
 <section class="intro-section">
 <h1 class="catch-copy">
-<span class="ib">猫と過ごす､<br class="sp-only"/>特別な週末｡</span><br/>
+<span class="ib">猫と過ごす､<br class="sp-only"/>特別なひととき｡</span><br/>
 </h1>
 <div class="hero-image-box">
-<img alt="猫と過ごす週末" decoding="async" loading="lazy" referrerpolicy="no-referrer" src="../assets/e8a136_img_e0bb6c92.png"/>
+<img alt="猫と過ごす週末" decoding="async" loading="lazy" referrerpolicy="no-referrer" src="../assets/volunteer.png"/>
 </div>
 <div class="lead-text">
-                    河口湖の猫カフェアトリエ高菜先生では、週末や祝日に猫達とゆっくり過ごしてくれるお手伝いボランティアを募集しています。<br/>
+                    河口湖の猫カフェアトリエ高菜先生では、猫達とゆっくり過ごしてくれるお手伝いボランティアを募集しています。<br/>
+                    週末・祝日はもちろん、<strong class="ats-text-accent">平日も受付中</strong>！<br/>
                     ボランティアの対価としてご飯が無料になります！<br/>
                     猫に癒されながらのんびり社会貢献、してみませんか？
                   </div>
 </section>
 <section class="benefits-section">
-<h2 class="section-title"><span class="ib">アトリエボランティア</span> <span class="ib">2つの特典</span></h2>
+<h2 class="section-title"><span class="ib">アトリエボランティア</span> <span class="ib">3つの特典</span></h2>
 <div class="benefits-grid">
 <div class="benefit-card">
 <span class="benefit-label">Benefit 01</span><span class="benefit-title"><span class="ib">自由時間は</span><span class="ib">好きに過ごせる</span></span>
@@ -92,6 +93,15 @@ include '../header.php';
 <p>姉妹店『マシマシ高菜先生食堂』のメニューから1食提供致します。（※2名以上で参加の場合は人数×1時間以上）。<br/>吉田のうどん、二郎系うどん、ほうとう、とり天など。</p>
 <div class="benefit-img-area">
 <img alt="うどん" decoding="async" loading="lazy" referrerpolicy="no-referrer" src="../assets/cae6a1_470407_0.jpg"/>
+</div>
+</div>
+<div class="benefit-card">
+<span class="benefit-label">Benefit 03</span><span class="benefit-title"><span class="ib">お子様・学生は</span><span class="ib">2食無料</span></span>
+<p>
+                        お子様・学生の方は特典として<strong class="ats-text-accent">2食分</strong>無料に！おひるごはんに加えて、お持ち帰り用の<strong class="ats-text-accent">お弁当</strong>もご用意いたします。
+                      </p>
+<div class="benefit-img-area">
+<img alt="お弁当" decoding="async" loading="lazy" referrerpolicy="no-referrer" src="../assets/6393c3_12.png"/>
 </div>
 </div>
 </div>
@@ -156,16 +166,20 @@ include '../header.php';
 <div class="clipboard-paper">
 <ul class="req-list">
 <li class="req-item">
-<span class="req-label">週末のみ</span><br/>
-<span class="req-text">募集は週末や祝日のみですが、回数は無制限。何度でもご参加いただけます。</span>
+<span class="req-label">平日・週末どちらもOK</span><br/>
+<span class="req-text">週末・祝日はもちろん、<strong class="ats-text-accent">平日も受付中</strong>。回数は無制限、何度でもご参加いただけます。</span>
 </li>
 <li class="req-item">
 <span class="req-label">1回1時間以上</span><br/>
-<span class="req-text">開始時間はアトリエの営業時間内ならいつでもOK。1名につき1食お食事を提供いたしますので、1食につき1時間以上のボランティアをお願い致します。</span>
+<span class="req-text">開始時間はアトリエの利用時間内ならいつでもOK。1名につき1食お食事を提供いたしますので、1食につき1時間以上のボランティアをお願い致します。</span>
 </li>
 <li class="req-item">
 <span class="req-label">人数制限なし</span><br/>
 <span class="req-text">お友達同士のご参加も大歓迎。3人で食べた場合は合計3時間以上の滞在をお願いしております。</span>
+</li>
+<li class="req-item">
+<span class="req-label">お子様・学生は2食無料</span><br/>
+<span class="req-text">お子様・学生の方はおひるごはん＋お持ち帰り用のお弁当の2食分が無料になります。</span>
 </li>
 <li class="req-item">
 <span class="req-label">身だしなみ</span><br/>
@@ -340,8 +354,8 @@ include '../header.php';
 </td>
 </tr>
 <tr>
-<th>営業時間</th>
-<td>AM 11:00~17:00</td>
+<th>利用時間</th>
+<td>13:00~18:00</td>
 </tr>
 <tr>
 <th>定休日</th>

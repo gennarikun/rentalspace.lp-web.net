@@ -11,15 +11,7 @@
 <link href="/comments/feed" rel="alternate" title="河口湖の無料の保護猫カフェ・コミュニティスペース・コワーキングスペース・レンタルスペース【アトリエ高菜先生】 » コメントフィード" type="application/rss+xml"/>
 <link href="/wp-json/oembed/1.0/embed?url=%2Faboutus" rel="alternate" title="oEmbed (JSON)" type="application/json+oembed"/>
 <link href="/wp-json/oembed/1.0/embed?url=%2Faboutus&amp;format=xml" rel="alternate" title="oEmbed (XML)" type="text/xml+oembed"/>
-
-
-
-
-
-
 <link href="../css/lib.min.css" id="lib-css" media="all" rel="stylesheet" type="text/css"/>
-
-
 <script id="lib-js" src="../js/lib.min.js" type="text/javascript"></script>
 <script id="typesquare_std-js" src="//webfonts.xserver.jp/js/xserverv3.js?fadein=0&amp;ver=2.0.9" type="text/javascript"></script>
 <link href="/wp-json/" rel="https://api.w.org/"/><link href="/wp-json/wp/v2/pages/5883" rel="alternate" title="JSON" type="application/json"/><link href="/xmlrpc.php?rsd" rel="EditURI" title="RSD" type="application/rsd+xml"/>
@@ -29,11 +21,26 @@
 <link href="../css/style.css" id="style-css" media="all" rel="stylesheet" type="text/css"/>
 <link href="../css/lp-about.css" id="5884-css" media="all" rel="stylesheet" type="text/css"/>
 <script id="script-js" src="../js/script.js" type="text/javascript"></script>
+<link href="/assets/favicon.png" rel="icon" type="image/png"/>
 <link href="/wp-content/uploads/2025/01/cropped-%E9%AB%98%E8%8F%9C%E3%81%AE%E3%83%AD%E3%82%B4-16-32x32.png" rel="icon" sizes="32x32"/>
 <link href="/wp-content/uploads/2025/01/cropped-%E9%AB%98%E8%8F%9C%E3%81%AE%E3%83%AD%E3%82%B4-16-192x192.png" rel="icon" sizes="192x192"/>
 <link href="/wp-content/uploads/2025/01/cropped-%E9%AB%98%E8%8F%9C%E3%81%AE%E3%83%AD%E3%82%B4-16-180x180.png" rel="apple-touch-icon"/>
 <meta content="/wp-content/uploads/2025/01/cropped-高菜のロゴ-16-270x270.png" name="msapplication-TileImage"/>
 
+<style>
+/* ==== フェードイン演出を停止し、常に表示させる ==== */
+.lp-animate,
+.lp-animate-up,
+.lp-animate-left,
+.lp-animate-right,
+.ats-scroll-fade {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  transition: none !important;
+  animation: none !important;
+}
+</style>
 </head>
 <body class="wp-singular page-template-default page page-id-5883 wp-theme-lightning fa_v7_css bootstrap4 device-pc">
 <a class="skip-link screen-reader-text" href="#main">コンテンツへスキップ</a>
@@ -86,7 +93,7 @@
 <div class="lp-about-container-sm">
 <h2 class="lp-about-main-title"><span class="lp-about-title-highlight">「イイコト」</span>して<br class="lp-sp-only"/>高菜先生を<br/>世界一有名な猫に</h2>
 <p class="lp-about-lead-text">
-        私たちは【高菜先生革命プロジェクト】を通じて、支援が必要な人々と「何かできることをしたい」という想いをもつ支援者とをつなぎ、様々な社会問題に取り組む企業です。<br/>
+        私たちは【アトリエ高菜先生】を通じて、社会貢献・保護猫活動の新しい仕組みを作る企業です。「何かできることをしたい」という想いをもつ人と人とをつなぎ、保護猫や社会問題に取り組みます。<br/>
         ちょっとイイコトをして保護猫の高菜先生をシンボルとして有名にし、世界をちょっとだけよくすることが企業の目的です。
       </p>
 </div>
@@ -96,23 +103,19 @@
 <div class="lp-about-row">
 <div class="lp-about-col-img lp-animate lp-animate-left">
 <div class="lp-about-img-frame">
-<img alt="VISION: 猫と遊んでる様子" decoding="async" src="../assets/785b3a_スクリーンショット-2026-02-01-4.12.26.png"/>
+<img alt="100人で1匹の猫を飼う" decoding="async" src="../assets/9141c7_14.png"/>
 </div>
 </div>
 <div class="lp-about-col-text lp-animate lp-animate-right">
 <div class="lp-about-vertical-heading">
-<h2 class="lp-about-sec-title">VISION</h2>
-<p> <span class="lp-about-sec-ja">目指す未来</span>
+<h2 class="lp-about-sec-title">100:1</h2>
+<p> <span class="lp-about-sec-ja">100人で1匹の猫を飼う</span>
 </p></div>
 <div class="lp-about-body-text">
-<h3>全部つなげて、社会をよくする</h3>
-<ul class="lp-about-list-clean">
-<li>猫の命、子どもの未来、地域の文化</li>
-<li>できる人とできない人</li>
-<li>支援したい人とされたい人</li>
-<li>居場所がない人と場所を持つ人</li>
-</ul>
-<p class="lp-about-emotional-text">すべてをつなげて<br/>楽しく守れる社会へ</p>
+<h3 class="lp-about-h3-accent">1人が100匹の猫を保護するのではなく、100人で1匹の猫を飼う</h3>
+<p>
+                アトリエ高菜先生では「100人で１匹の猫を飼う」というコンセプトで保護活動を行っています。医療費やエサの寄付、ボランティアさん達のおかげで猫が自由に暮らせる環境となっています。ひとりで抱え込まず、みんなで支え合う継続的な保護猫活動を目指しています。
+              </p>
 </div>
 </div>
 </div>
@@ -123,55 +126,18 @@
 <div class="lp-about-row">
 <div class="lp-about-col-img lp-animate lp-animate-right">
 <div class="lp-about-img-frame">
-<img alt="MISSION: 子供たちの食事風景" decoding="async" src="../assets/f63bab_DSC01949.jpg"/>
+<img alt="お仲間コミュニティ・無料食事会" decoding="async" src="../assets/cae6a1_470407_0.jpg"/>
 </div>
 </div>
 <div class="lp-about-col-text lp-animate lp-animate-left">
 <div class="lp-about-vertical-heading">
-<h2 class="lp-about-sec-title">MISSION</h2>
-<p> <span class="lp-about-sec-ja">私たちのやること</span>
+<h2 class="lp-about-sec-title">MEAL</h2>
+<p> <span class="lp-about-sec-ja">お仲間コミュニティ</span>
 </p></div>
 <div class="lp-about-body-text">
-<h3 class="lp-about-h3-accent">「エンタメ×支援」</h3>
-<p>ネガティブだからこそエンタメを大切にする。<br/>楽しく社会貢献できる仕組みを作ります。</p>
-<h3 class="lp-about-h3-accent">「全部つなげるコミュニティ」</h3>
-<p>ヒト、モノ、コト、ネコ、社会、未来、居場所。<br/>全部つなげてなんとかするコミュニティを作ります。</p>
-<h3 class="lp-about-h3-accent">「高菜先生を世界一有名にする」</h3>
-<p>高菜先生を世界的マスコットキャラクターにし、社会問題に興味を持つ人を増やします。</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="lp-about-section lp-about-mvv">
-<div class="lp-about-container">
-<div class="lp-about-row">
-<div class="lp-about-col-img lp-animate lp-animate-left">
-<div class="lp-about-img-frame">
-<img alt="VALUE: 猫の鋭い眼差し" decoding="async" src="../assets/31033d_DSC02038-1024x684-1.jpg"/>
-</div>
-</div>
-<div class="lp-about-col-text lp-animate lp-animate-right">
-<div class="lp-about-vertical-heading">
-<h2 class="lp-about-sec-title">VALUE</h2>
-<p> <span class="lp-about-sec-ja">大事にしていること</span>
-</p></div>
-<div class="lp-about-body-text">
-<div class="lp-about-canbe-box">
-<h3 class="lp-about-canbe-title">Can be<br class="lp-sp-only"/> ～私たちはできる～</h3>
-<p class="lp-about-canbe-desc">Community, Action, New, Bridge, Entertainmentの頭文字をとり、Can beをテーマに行動していきます。</p>
-<dl class="lp-about-dl-list">
-<dt>C = Community（コミュニティ）</dt>
-<dd>高齢者・人・猫・子どもの居場所をつくる。</dd>
-<dt>A = Action（アクション）</dt>
-<dd>想ったらまず動く。やさしさを行動で示す。</dd>
-<dt>N = New（新しい）</dt>
-<dd>世の中にない新しい可能性を常に模索する。</dd>
-<dt>B = Bridge（かけ橋）</dt>
-<dd>ちがいを越えて、誰かと何かをつなぐ橋になる。</dd>
-<dt>E = Entertainment（遊び心）</dt>
-<dd>遊び心を大切に、お客様に笑顔を届ける。</dd>
-</dl></div>
+<h3 class="lp-about-h3-accent">子ども食堂から始まった、大人も来れる食事会</h3>
+<p>猫のボランティアをすると食堂でご飯が無料になる制度を採用しており、ボランティアや利用者、スタッフ向けの無料食事会・BBQなどを月に複数回行っています。猫のお世話をしてくれた人たちに対するお礼でもあります。</p>
+<p>猫を中心としたコミュニティ作りを行い、人のつながりが自然とできてその中で猫が幸せに暮らすというモデル作りを目指しています。</p>
 </div>
 </div>
 </div>
@@ -209,15 +175,15 @@
 </tr>
 <tr>
 <th>ブランド</th>
-<td>高菜先生革命プロジェクト</td>
+<td>アトリエ高菜先生</td>
 </tr>
 <tr>
 <th>拠点展開</th>
-<td>全国各地・ラオスなど</td>
+<td>山梨・全国各地・海外</td>
 </tr>
 <tr>
 <th>主な取り組み</th>
-<td>支援できる人と支援が必要な人のマッチング</td>
+<td>人と人のマッチング・保護猫活動・子ども食堂</td>
 </tr>
 </tbody>
 </table></div>
@@ -254,11 +220,7 @@
 </tr>
 <tr>
 <th>拠点展開</th>
-<td>山梨県甲府市・富士吉田市・河口湖</td>
-</tr>
-<tr>
-<th>主な取り組み</th>
-<td>保護猫施設運営・障がい者支援・子ども食堂</td>
+<td>山梨県富士吉田市・河口湖</td>
 </tr>
 </tbody>
 </table></div>
@@ -350,7 +312,7 @@
                    宮崎県延岡市のスーパー裏で衰弱していたところを保護。高菜漬けの桶に入れられて病院へ運ばれたことから「高菜」と命名されました。その後山梨へ移住。回復後には車中泊での九州一周3000kmの旅にも同行するなど、驚異的な生命力と適応力を持っています。
                  </p>
 <div class="ats-story-sp-img">
-<img alt="奇跡の生還" decoding="async" src="../assets/2＿4g6v28.jpg"/>
+<img alt="奇跡の生還" decoding="async" src="../assets/img_c486861a.jpg"/>
 </div>
 </div>
 <div class="ats-story-item" data-target="takana-2">
@@ -359,7 +321,7 @@
                    現在は「代表取締役猫」として、飲食やアパレルなど様々な事業の公式キャラクターを務めています。高菜先生の知名度が上がることで保護猫活動への関心が高まり、収益が社会課題の解決に還元される仕組みを作っています。
                  </p>
 <div class="ats-story-sp-img">
-<img alt="社会貢献の象徴" decoding="async" src="../assets/6＿FB_IMG_1615800469253.jpg"/>
+<img alt="社会貢献の象徴" decoding="async" src="../assets/img_c98760cf.jpg"/>
 </div>
 </div>
 <div class="ats-story-item" data-target="takana-3">
@@ -368,19 +330,19 @@
                    普段は「アトリエ高菜先生」にて、看板猫としてお客様を迎えています。お昼寝をしながら訪れる人々に癒やしと笑顔を提供し、人と猫、人と人を繋ぐ架け橋として活躍しています。
                  </p>
 <div class="ats-story-sp-img">
-<img alt="アトリエでの日常" decoding="async" src="../assets/スクリーンショット-2026-02-01-4.00.19.png"/>
+<img alt="アトリエでの日常" decoding="async" src="../assets/img_e1b15c4e.png"/>
 </div>
 </div>
 </div>
 <div class="ats-story-visual js-ats-visuals" data-group="takana">
 <div class="ats-story-img active" id="takana-1">
-<img alt="奇跡の生還" decoding="async" src="../assets/2＿4g6v28.jpg"/>
+<img alt="奇跡の生還" decoding="async" src="../assets/img_c486861a.jpg"/>
 </div>
 <div class="ats-story-img" id="takana-2">
-<img alt="社会貢献の象徴" decoding="async" src="../assets/6＿FB_IMG_1615800469253.jpg"/>
+<img alt="社会貢献の象徴" decoding="async" src="../assets/img_c98760cf.jpg"/>
 </div>
 <div class="ats-story-img" id="takana-3">
-<img alt="アトリエでの日常" decoding="async" src="../assets/スクリーンショット-2026-02-01-4.00.19.png"/>
+<img alt="アトリエでの日常" decoding="async" src="../assets/img_e1b15c4e.png"/>
 </div>
 </div>
 </div>
@@ -411,8 +373,8 @@
 <td>不要<br/><span style="font-size: 0.9em;">（ほぼ年中無休で営業しておりますが、確実にご利用になりたいという方は事前のお問い合わせをお願い致します。）</span></td>
 </tr>
 <tr>
-<th>営業時間</th>
-<td>AM 11:00~17:00</td>
+<th>利用時間</th>
+<td>13:00~18:00</td>
 </tr>
 <tr>
 <th>定休日</th>
