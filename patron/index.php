@@ -331,7 +331,7 @@ include '../header.php';
 </tr>
 <tr>
 <th>営業時間</th>
-<td>AM 11:00~17:00</td>
+<td>13:00~18:00</td>
 </tr>
 <tr>
 <th>定休日</th>
