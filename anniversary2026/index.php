@@ -3,8 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noindex,follow">
-  <title>高菜先生 生誕祭 2026 | アトリエ高菜先生</title>
+  <title>アトリエ高菜先生 2周年祭｜感謝祭 2026年9月23日（水・祝）</title>
+  <meta name="description" content="アトリエ高菜先生 2周年祭。日頃の猫支援への感謝をこめて、2026年9月23日（水・祝）に食事を無料でふるまう感謝祭を開催。昼はこども食堂のお好み焼き配布・たい焼き作り体験、夜は海鮮BBQ。昼夜ビンゴ大会も。河口湖の保護猫カフェにて。">
+  <meta property="og:title" content="アトリエ高菜先生 2周年祭｜感謝祭 2026年9月23日（水・祝）">
+  <meta property="og:description" content="日頃の感謝をこめて食事を無料でふるまう感謝祭。昼はこども食堂お好み焼き・たい焼き作り体験、夜は海鮮BBQ、昼夜ビンゴ大会。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rentalspace.lp-web.net/anniversary2026/">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://rentalspace.lp-web.net/anniversary2026/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600;700;800&family=M+PLUS+Rounded+1c:wght@400;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
@@ -42,17 +48,30 @@
     a:focus-visible, button:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
 
     /* =================== NAV =================== */
-    nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-      background: rgba(6,10,36,0.92);
-      backdrop-filter: blur(12px);
-      padding: 12px 24px;
-      display: flex; align-items: center; justify-content: space-between;
-      transform: translateY(-100%);
-      transition: transform 0.4s ease;
-      border-bottom: 1px solid rgba(240,180,41,0.2);
+    /* ===== ヘッダー（他ページ同様・自己完結／サイトCSSは読み込まない） ===== */
+    .lp-hdr { position: sticky; top: 0; z-index: 100; background: #fff; display: flex; align-items: center; justify-content: space-between; padding: 8px 20px; box-shadow: 0 1px 10px rgba(0,0,0,0.08); }
+    .lp-hdr-logo { display: block; line-height: 0; }
+    .lp-hdr-logo img { height: 46px; width: auto; display: block; }
+    .lp-hdr-nav { display: flex; gap: 20px; align-items: center; }
+    .lp-hdr-nav a { color: #2A1B10; text-decoration: none; font-family: 'M PLUS Rounded 1c', sans-serif; font-weight: 700; font-size: 13px; letter-spacing: 0.4px; white-space: nowrap; transition: color 0.2s; }
+    .lp-hdr-nav a:hover { color: var(--red); }
+    .lp-hdr-toggle { display: none; }
+    @media (max-width: 900px) {
+      .lp-hdr { position: relative; }
+      .lp-hdr-toggle { display: flex; flex-direction: column; justify-content: center; gap: 5px; width: 46px; height: 40px; padding: 0 11px; background: #fff; border: 1px solid rgba(0,0,0,0.14); border-radius: 8px; cursor: pointer; }
+      .lp-hdr-toggle span { display: block; height: 2px; background: #2A1B10; border-radius: 2px; transition: 0.3s; }
+      .lp-hdr-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+      .lp-hdr-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+      .lp-hdr-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+      .lp-hdr-nav { position: absolute; top: 100%; left: 0; right: 0; background: #fff; flex-direction: column; align-items: stretch; gap: 0; max-height: 0; overflow: hidden; transition: max-height 0.35s ease; box-shadow: 0 10px 18px rgba(0,0,0,0.12); z-index: 100; }
+      .lp-hdr-nav.open { max-height: 560px; }
+      .lp-hdr-nav a { padding: 15px 20px; border-bottom: 1px solid #f1ede5; font-size: 15px; }
     }
-    nav.visible { transform: translateY(0); }
+    /* ===== 固定お問い合わせ（LINE） ===== */
+    .lp-fab { position: fixed; right: 18px; bottom: 18px; z-index: 90; display: inline-flex; align-items: center; gap: 8px; background: #06C755; color: #fff; font-family: 'M PLUS Rounded 1c', sans-serif; font-weight: 700; font-size: 14px; padding: 12px 20px; border-radius: 50px; text-decoration: none; box-shadow: 0 6px 20px rgba(0,0,0,0.28); transition: transform 0.2s, box-shadow 0.2s; }
+    .lp-fab:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(0,0,0,0.32); }
+    .lp-fab svg { flex-shrink: 0; }
+    @media (max-width: 480px) { .lp-fab { right: 14px; bottom: 14px; padding: 11px 16px; font-size: 13px; } }
     .nav-logo { font-family: 'Shippori Mincho', serif; font-weight: 700; color: var(--gold-light); font-size: 15px; letter-spacing: 2px; }
     .nav-links { display: flex; align-items: center; gap: 22px; }
     .nav-link { color: rgba(255,246,229,0.75); text-decoration: none; font-size: 13px; letter-spacing: 1px; transition: color 0.2s; }
@@ -253,7 +272,7 @@
 
     /* =================== FEATURES =================== */
     .features { background: var(--cream); }
-    .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 8px; }
+    .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 24px; clear: both; }
     .feature-card {
       background: #fff; border-radius: 16px; padding: 30px 28px; position: relative; overflow: hidden;
       box-shadow: 0 4px 24px rgba(11,20,64,0.08); transition: transform 0.3s, box-shadow 0.3s;
@@ -431,7 +450,7 @@
   position: fixed;
   top: 16px;
   right: 16px;
-  z-index: 100;
+  z-index: 90;
   display: flex;
   gap: 10px;
 }
@@ -584,6 +603,19 @@
  </style>
 </head>
 <body>
+<header class="lp-hdr">
+  <a class="lp-hdr-logo" href="/"><img src="/assets/f7b213_FUJIYA-3.png" alt="アトリエ高菜先生"></a>
+  <button class="lp-hdr-toggle" id="lpHdrToggle" aria-label="メニューを開く" aria-expanded="false"><span></span><span></span><span></span></button>
+  <nav class="lp-hdr-nav" id="lpHdrNav">
+    <a href="/weekend-staff">ご飯無料ボランティア</a>
+    <a href="/contact">お問い合わせ</a>
+    <a href="/gallery">ギャラリー</a>
+    <a href="/reviews">お客様の声</a>
+    <a href="/aboutus">経営理念</a>
+    <a href="/">トップ</a>
+    <a href="https://houtoutaiken.lp-web.net/recruit/">求人募集</a>
+  </nav>
+</header>
 
  
   <!-- ========== HERO ========== -->
@@ -595,49 +627,37 @@
     </div>
     <div class="lanterns" aria-hidden="true">
       <div class="lantern"><div class="lantern-string"></div><div class="lantern-body">祝</div></div>
-      <div class="lantern"><div class="lantern-string"></div><div class="lantern-body">誕生日</div></div>
+      <div class="lantern"><div class="lantern-string"></div><div class="lantern-body">感謝</div></div>
       <div class="lantern"><div class="lantern-string"></div><div class="lantern-body">祭</div></div>
       <div class="lantern"><div class="lantern-string"></div><div class="lantern-body">縁</div></div>
       <div class="lantern"><div class="lantern-string"></div><div class="lantern-body">喜</div></div>
     </div>
 
     <div class="hero-content">
-      <div class="hero-badge">年に一度の大祭</div>
-      <p class="hero-tiger">高菜先生</p>
-      <h1 class="hero-title">生誕祭</h1>
-      <div class="hero-ribbon">みんなでお祝いしよう！</div>
-      <p class="hero-date">2026年8月2日（日）</p>
-      <p class="hero-time">キッズタイム 14:00〜 ／ 夜の部 17:00〜　アトリエ高菜先生</p>
+      <div class="hero-badge">年に一度の感謝祭</div>
+      <p class="hero-tiger">アトリエ高菜先生</p>
+      <h1 class="hero-title">2周年祭</h1>
+      <div class="hero-ribbon">日頃の感謝をこめて</div>
+      <p class="hero-date">2026年9月23日（水・祝）</p>
+      <p class="hero-time">昼の部 12:00〜 ／ 夜の部 17:00〜　アトリエ高菜先生</p>
       <a href="#entry" class="hero-cta">参加を予約する</a>
       <div class="hero-scroll">SCROLL</div>
     </div>
   </section>
-<div class="quick-links">
-  <a href="https://rentalspace.lp-web.net/" class="quick-link quick-link--top">
-    アトリエ高菜先生 TOPへ
-  </a>
-  <a href="/contact" class="quick-link quick-link--cta">
-    お問い合わせ
-  </a>
-</div>
   <!-- ========== INTRO ========== -->
   <section class="intro">
     <div class="container">
-      <div class="section-label reveal">Birthday Festival</div>
-      <h2 class="section-title reveal">8月2日は、高菜先生のお誕生日。<br>1日まるごとお祭りモードです。</h2>
+      <div class="section-label reveal">2nd Anniversary</div>
+      <h2 class="section-title reveal">おかげさまで2周年。<br>感謝をこめて、まるごとお祭りです。</h2>
       <div class="section-divider reveal"></div>
       <p class="intro-message reveal">
         <span class="polaroid float-right"><img src="https://rentalspace.lp-web.net/assets/0e45a4_20251017_hogoneko1.png" alt="高菜先生"><span class="polaroid-tag">高菜先生</span></span>
-        今年もやってきました、待ちに待った8月2日。<br>
-        アトリエ高菜先生が、お昼から夜まで丸ごとお祭り会場に変わる<br>
-        年に一度だけのスペシャルデーです。<br><br>
-        14時からはお菓子・かき氷の無料配布とキッズアカデミー（たい焼き作り体験）、<br>
-        夜はBBQに流しそうめん、そしてビンゴ大会まで。<br>
-        高菜先生のお誕生日を、集まったみんなでめいっぱいお祝いしましょう。
+        9月23日、アトリエ高菜先生は2周年を迎えます。いつも猫たちを応援してくださって、本当にありがとうございます。感謝の気持ちをこめて、この日はお昼から夜まで、食事を無料でふるまう感謝祭を開きます。<br><br>
+        昼はこども食堂のお好み焼き配布とたい焼き作り体験、夜は海鮮BBQにお鍋。そして昼も夜もビンゴ大会。地域のみんなで、笑って過ごす1日にしましょう。
       </p>
       <div class="intro-highlight reveal">
         <div class="stamp">祝</div>
-        <p>お一人でも、ご家族でも、お友達同士でも。<br>途中参加・途中退場OK！<strong>気軽に遊びに来てください。</strong></p>
+        <p>お一人でも、ご家族でも、お友達同士でも。お食事は無料でふるまいます。<br><strong>お好み焼き配布・たい焼き作り体験は要予約です。</strong></p>
       </div>
     </div>
   </section>
@@ -652,28 +672,28 @@
       <div class="section-divider reveal"></div>
       <p class="timeline-lead reveal" style="color:var(--text-light);margin-bottom:28px;">
         <span class="polaroid float-left"><img src="https://rentalspace.lp-web.net/assets/takana-sensei.png" alt="高菜先生"><span class="polaroid-tag">見どころ紹介</span></span>
-        高菜先生と一緒にBBQからビンゴ大会まで、盛りだくさんの1日をお楽しみください。
+        こども食堂のお好み焼きから夜の海鮮BBQ、昼夜のビンゴ大会まで。感謝をこめた1日をお楽しみください。
       </p>
       <div class="features-grid">
         <div class="feature-card reveal reveal-delay-1">
-          <span class="feature-emoji"><img src="https://rentalspace.lp-web.net/assets/stockhiroDSCF5504_TP_V.jpg" alt="高菜先生"></span>
-          <h3 class="feature-title">炭火焼きプレゼント特典</h3>
-          <p class="feature-desc"><b>10:30〜14:00のランチタイムにランチをご利用のお客様限定。</b>鹿肉ととうもろこしの炭火焼きをプレゼントします！</p>
+          <span class="feature-emoji"><img src="/assets/okonomiyaki_kodomo_20260824.jpg" alt="こども食堂で無料配布するお好み焼き"></span>
+          <h3 class="feature-title">こども食堂 お好み焼き無料配布</h3>
+          <p class="feature-desc">昼の部（12:00〜15:00）、こども食堂としてお好み焼きを無料でふるまいます。<b>※お子さま＋保護者は無料／大人のみのご利用は不可。要予約です。</b></p>
         </div>
         <div class="feature-card reveal reveal-delay-2">
           <span class="feature-emoji"><img src="https://rentalspace.lp-web.net/assets/adpDSC_6197-.jpg" alt="高菜先生"></span>
-          <h3 class="feature-title">キッズ向け無料イベント（14:00〜17:00）</h3>
-          <p class="feature-desc">かき氷・お菓子の無料配布に、キッズアカデミー〈たい焼き作り体験〉も。ご家族みんなで楽しめる内容をご用意しています。</p>
+          <h3 class="feature-title">たい焼き作り体験（要予約）</h3>
+          <p class="feature-desc">自分でつくる、できたてのたい焼き。お子さまに大人気の体験です。昼の部で開催、事前予約制です。</p>
         </div>
         <div class="feature-card reveal reveal-delay-3">
-          <span class="feature-emoji"><img src="https://rentalspace.lp-web.net/assets/adpDSC_9310-.jpg" alt="高菜先生"></span>
-          <h3 class="feature-title">夜は食事会！BBQ＆流しそうめん＆飲み会</h3>
-          <p class="feature-desc">お酒・BBQ・流しそうめん・焼きそばに、みんなで囲む誕生日ケーキ。夜の部は無料参加OK、食材・ドリンクの持ち寄りも大歓迎です。</p>
+          <span class="feature-emoji"><img src="/assets/kaisen_bbq_20260824.jpg" alt="夜の海鮮BBQ"></span>
+          <h3 class="feature-title">夜は食事会！海鮮BBQ＆お鍋</h3>
+          <p class="feature-desc">17:00〜21:00の夜の部は、海鮮BBQ・お鍋・お酒を無料でご用意。みんなで囲む食事会です。</p>
         </div>
         <div class="feature-card reveal reveal-delay-4">
           <span class="feature-emoji"><img src="https://rentalspace.lp-web.net/assets/HNdMo-ibMAAwWqE.jpg" alt="高菜先生"></span>
-          <h3 class="feature-title">ビンゴ大会</h3>
-          <p class="feature-desc">食事券・すりだね・オリジナルグッズなど、豪華景品が当たるチャンス！最後はみんなでケーキを食べてお祝いします。</p>
+          <h3 class="feature-title">ビンゴ大会（昼・夜 2回）</h3>
+          <p class="feature-desc">昼13:30と夜18:00の2回開催。楽くん・ヤマフジ協賛の豪華景品が当たるチャンス！食事券・すりだね・オリジナルグッズなどが当たります。</p>
         </div>
       </div>
     </div>
@@ -687,21 +707,21 @@
       <div class="section-divider reveal"></div>
       <p class="timeline-lead reveal">
         <span class="polaroid dark float-right"><img src="https://rentalspace.lp-web.net/assets/img_c486861a.jpg" alt="高菜先生"><span class="polaroid-tag">子供のころの高菜先生</span></span>
-        8月2日（日）1日の流れです。途中参加・途中退場も自由なので、都合の良い時間にお立ち寄りください。<br>
-        <b>※10:30〜14:00のランチタイムは、ランチご利用のお客様限定です。</b>炭火焼き特典がございます。</p>
+        9月23日（水・祝）1日の流れです。途中参加・途中退場も自由なので、都合の良い時間にお立ち寄りください。<br>
+        <b>※お好み焼き配布・たい焼き作り体験は要予約です。</b>雨天は店内、晴天はテラスで開催します。</p>
       <div class="timeline reveal">
         <div class="timeline-track">
           <div class="t-item">
             <div class="t-dot"></div>
-            <div class="t-time">14:00 - 17:00</div>
-            <div class="t-name">🎏 キッズタイム</div>
-            <div class="t-desc">お菓子配布・かき氷配布に加え、キッズアカデミー〈たい焼き作り体験〉を開催。お子様向けの無料イベントです。</div>
+            <div class="t-time">12:00 - 15:00</div>
+            <div class="t-name">昼の部</div>
+            <div class="t-desc">こども食堂のお好み焼き無料配布（要予約）と、たい焼き作り体験（要予約）。13:30〜ビンゴ大会。※お好み焼きはお子さま＋保護者が無料、大人のみのご利用はできません。</div>
           </div>
           <div class="t-item red">
             <div class="t-dot"></div>
             <div class="t-time">17:00 - 21:00</div>
-            <div class="t-name">🌙 夜の部</div>
-            <div class="t-desc">お酒・BBQ・流しそうめん・焼きそば・誕生日ケーキの食事会と、ビンゴ大会を開催。無料参加OK、食材・ドリンクの持ち寄りも歓迎です。</div>
+            <div class="t-name">夜の部</div>
+            <div class="t-desc">海鮮BBQ・お鍋・お酒の食事会（無料）。18:00〜ビンゴ大会。ゆっくり楽しんでいってください。</div>
           </div>
         </div>
       </div>
@@ -714,7 +734,7 @@
       <div class="section-label reveal">Bingo Tournament</div>
       <h2 class="section-title reveal">ビンゴ大会 豪華景品</h2>
       <div class="section-divider reveal"></div>
-      <p class="bingo-lead reveal">夜の部のクライマックス、ビンゴ大会。豪華協賛景品が当たるチャンスをお見逃しなく！</p>
+      <p class="bingo-lead reveal">昼13:30・夜18:00の2回開催。楽くん・ヤマフジ協賛の豪華景品が当たるチャンスをお見逃しなく！</p>
       <div class="prize-grid reveal">
         <div class="prize-card rank-1">
           <div class="prize-rank">1位</div>
@@ -755,24 +775,26 @@
           </p>
         </div>
       </div>
+      <div class="sponsor-card reveal">
+        <div class="sponsor-logo"><img src="/assets/yamafuji_logo_20260824.webp" alt="株式会社ヤマフジ"></div>
+        <div>
+          <div class="sponsor-badge">協賛企業</div>
+          <h3 class="sponsor-name">株式会社ヤマフジ</h3>
+          <p class="sponsor-desc">
+            株式会社ヤマフジは、甲府市を拠点に山梨の観光土産品や特産品を扱う総合土産問屋です。シャインマスカットを使ったお菓子やご当地カレー、山梨素材のご飯のおともなど、多彩な商品の企画・開発・販売を手がけています。「ユニークな商品で人と人を繋ぐ」を掲げ、“旅のお裾分け”の文化を広げるとともに、地産地消を推進する取り組みを通じて、山梨の魅力を県内外へ届けています。今回のビンゴ大会では景品をご提供いただきました。
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 
-<div class="quick-links">
-  <a href="https://rentalspace.lp-web.net/" class="quick-link quick-link--top">
-    アトリエ高菜先生 TOPへ
-  </a>
-  <a href="/contact" class="quick-link quick-link--cta">
-    お問い合わせ
-  </a>
-</div>
   <!-- ========== TAKANA GALLERY ========== -->
   <section class="takana-gallery" id="takana-gallery">
     <div class="container">
       <div class="section-label reveal">Takana Sensei Gallery</div>
       <h2 class="section-title reveal">高菜先生ギャラリー</h2>
       <div class="section-divider reveal"></div>
-      <p class="tg-lead reveal">看板猫・高菜先生の普段の姿から、生誕祭の思い出まで。お気に入りの1枚を見つけてください。</p>
+      <p class="tg-lead reveal">看板猫・高菜先生の普段の姿から、イベントの思い出まで。お気に入りの1枚を見つけてください。</p>
       <div class="tg-grid reveal">
         <div class="tg-item">
           <img src="https://rentalspace.lp-web.net/assets/c44a22_434124_0.jpg" alt="看板猫・高菜先生">
@@ -812,7 +834,7 @@
         <span class="polaroid dark float-left"><img src="https://rentalspace.lp-web.net/assets/93701d_434121_0.jpg" alt="高菜先生"><span class="polaroid-tag">おなかまと</span></span>
         アトリエ高菜先生には<strong style="color:var(--gold-light)">「おなかまコミュニティ」</strong>があります。<br><br>
         ただの猫好きの集まりを超えて、人生をより面白く、豊かにしていくための「おなかま」づくり。
-        生誕祭のような節目のイベントも、その輪を広げる大切な場のひとつです。
+        2周年祭のような節目のイベントも、その輪を広げる大切な場のひとつです。
       </p>
       <div class="community-highlight reveal">
         <p>「猫と人」との関係を超えて、<br>一緒に笑い合える「仲間」が増えていくのが<br>一番の喜びなんです。</p>
@@ -829,21 +851,20 @@
       <table class="info-table reveal">
         <tr>
           <th>開催日</th>
-          <td><strong>2026年 8月2日（日）</strong></td>
+          <td><strong>2026年 9月23日（水・祝）</strong></td>
         </tr>
         <tr>
           <th>時間</th>
           <td>
-            ランチタイム　10:30〜14:00頃　<span style="font-size:13px;color:var(--red)">※ランチご利用のお客様限定で炭火焼き特典あり</span><br>
-            キッズタイム　14:00〜17:00頃（お菓子・かき氷配布／たい焼き作り体験）<br>
-            夜の部　17:00〜21:00頃<br>
-            <span style="font-size:13px;color:var(--red)">※ 途中参加・途中退場OK！</span>
+            昼の部　12:00〜15:00頃（こども食堂 お好み焼き配布／たい焼き作り体験／13:30〜ビンゴ大会）<br>
+            夜の部　17:00〜21:00頃（海鮮BBQ・お鍋・お酒／18:00〜ビンゴ大会）<br>
+            <span style="font-size:13px;color:var(--red)">※ お好み焼き配布・たい焼き作り体験は要予約／途中参加・途中退場OK</span>
           </td>
         </tr>
         <tr>
           <th>場所</th>
           <td>
-            アトリエ高菜先生<br>
+            アトリエ高菜先生（雨天＝店内／晴天＝テラス）<br>
             <span style="font-size:13px;color:var(--text-light)">〒401-0301 山梨県南都留郡富士河口湖町船津3250-3</span><br>
             <span style="font-size:13px;color:var(--text-light)">河口湖駅より徒歩12分 / 無料駐車場10台</span>
           </td>
@@ -851,8 +872,8 @@
         <tr>
           <th>参加費</th>
           <td>
-            <strong style="font-size:20px;color:var(--red)">夜の部：完全無料</strong><br>
-            <span style="font-size:13px;color:var(--text-light)">食材・ドリンクの持ち寄り大歓迎です。</span>
+            <strong style="font-size:20px;color:var(--red)">お食事無料</strong><br>
+            <span style="font-size:13px;color:var(--text-light)">昼のお好み焼きはお子さま＋保護者が無料（大人のみのご利用は不可）。お好み焼き配布・たい焼き作り体験は要予約です。</span>
           </td>
         </tr>
         <tr>
@@ -868,14 +889,6 @@
       </table>
     </div>
   </section>
-<div class="quick-links">
-  <a href="https://rentalspace.lp-web.net/" class="quick-link quick-link--top">
-    アトリエ高菜先生 TOPへ
-  </a>
-  <a href="/contact" class="quick-link quick-link--cta">
-    お問い合わせ
-  </a>
-</div>
   <!-- ========== PHOTOS ========== -->
   <section class="photos">
     <div class="container">
@@ -929,7 +942,7 @@
           <div class="venue-rows">
             <div class="venue-row"><span class="venue-row-label">電車</span><span>富士急行線「河口湖駅」より徒歩12分</span></div>
             <div class="venue-row"><span class="venue-row-label">駐車場</span><span>無料駐車場10台完備</span></div>
-            <div class="venue-row"><span class="venue-row-label">当日時間</span><span>10:30〜14:00(ランチ利用のお客様のみ)14:00～21:00（出入り自由）</span></div>
+            <div class="venue-row"><span class="venue-row-label">当日時間</span><span>昼の部 12:00〜15:00 ／ 夜の部 17:00〜21:00（出入り自由）</span></div>
           </div>
           <a href="https://maps.google.com/?q=アトリエ高菜先生+山梨県南都留郡富士河口湖町船津3250-3" target="_blank" rel="noopener" class="venue-map-btn">Google マップで開く</a>
         </div>
@@ -946,10 +959,10 @@
       <div class="message-box reveal">
         <p class="message-text">
           <span class="polaroid float-right"><img src="https://rentalspace.lp-web.net/assets/31033d_DSC02038-1024x684-1.jpg" alt="高菜先生"><span class="polaroid-tag">高菜先生</span></span>
-          高菜先生の誕生日を、今年もみんなでお祝いできるのが本当に嬉しいんだ。<br><br>
-          「猫と人」との関係を超えて、一緒に笑い合える「仲間」が増えていくのが一番の喜び。<br>
-          当日は僕も思いっきり楽しむつもりだから、みんなも気楽に遊びに来てよ。<br>
-          猫達と一緒に待ってるぜ！
+          アトリエ高菜先生も、おかげさまで2周年を迎えたぜ。<br><br>
+          いつも猫たちを応援してくれて、本当にありがとう。<br>
+          感謝の気持ちをこめて、当日はみんなにごはんを振る舞うんだ。<br>
+          昼も夜も、猫達と一緒に待ってるからな！
         </p>
         <div class="message-sign">— 先生より</div>
       </div>
@@ -960,20 +973,20 @@
   <section class="cta-section" id="entry">
     <div class="container">
       <div class="cta-avatar"><img src="https://rentalspace.lp-web.net/assets/20250618_182532-768x576.jpg" alt="高菜先生"></div>
-      <h2 class="cta-title">さあ、一緒にお祝いしよう！</h2>
+      <h2 class="cta-title">さあ、一緒に楽しもう！</h2>
       <p class="cta-sub">
         美味しいごはんを食べながら、猫たちの未来や面白い企画について、<br>
         肩肘張らずに語り合いましょう。
       </p>
-      <a href="/contact" class="cta-button">参加予約フォームへ</a>
-      <p class="cta-note">※ キッズアカデミーは参加人数を把握したいので、事前のご連絡をお願いします</p>
+      <a href="https://line.me/R/ti/p/@577xqlpz?oat_content=url&amp;ts=12201507" target="_blank" rel="noopener" class="cta-button">LINEで予約する</a>
+      <p class="cta-note">※ お好み焼き配布・たい焼き作り体験は要予約です。LINEからお気軽にご連絡ください</p>
     </div>
   </section>
 
   <!-- ========== FOOTER ========== -->
   <footer>
-    <div class="footer-logo">高菜先生 生誕祭 2026</div>
-    <p>8月2日（日）｜ 14:00～21:00</p>
+    <div class="footer-logo">アトリエ高菜先生 2周年祭 2026</div>
+    <p>9月23日（水・祝）｜ 12:00〜21:00</p>
     <p style="margin-top:8px">アトリエ高菜先生</p>
     <p style="margin-top:16px">
       <a href="https://rentalspace.lp-web.net/" target="_blank" rel="noopener" style="color:rgba(255,246,229,0.45);font-size:12px;text-decoration:underline;">アトリエ高菜先生 公式サイト</a>
@@ -993,7 +1006,24 @@
     }, { threshold: 0.1 });
     revealEls.forEach(el => observer.observe(el));
 
-    // Nav is always visible (see class="visible" on #navbar)
+    // ヘッダー ハンバーガー開閉
+    const hdrToggle = document.getElementById('lpHdrToggle');
+    const hdrNav = document.getElementById('lpHdrNav');
+    if (hdrToggle && hdrNav) {
+      hdrToggle.addEventListener('click', () => {
+        const open = hdrNav.classList.toggle('open');
+        hdrToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+      hdrNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+        hdrNav.classList.remove('open');
+        hdrToggle.setAttribute('aria-expanded', 'false');
+      }));
+    }
   </script>
+
+  <a href="https://line.me/R/ti/p/@577xqlpz?oat_content=url&amp;ts=12201507" target="_blank" rel="noopener" class="lp-fab" aria-label="LINEでお問い合わせ">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+    <span>お問い合わせ</span>
+  </a>
 </body>
 </html>

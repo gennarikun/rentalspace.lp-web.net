@@ -8,7 +8,7 @@ include 'head-common.php';
 include 'header.php';
 ?>
 <style>
-/* ==== お知らせバー（8/2生誕祭告知） ==== */
+/* ==== お知らせバー（9/23 2周年祭告知） ==== */
 .ats-announce-bar {
   background: linear-gradient(90deg, #8C1D28, #D7263D);
   color: #fff;
@@ -296,7 +296,7 @@ include 'header.php';
   <div class="ats-announce-inner">
     <span class="ats-announce-badge">お知らせ</span>
     <p class="ats-announce-text">
-      8月2日（日）は「高菜先生 生誕祭」開催！<a href="/event/">詳しくはこちら →</a>
+      9月23日（水・祝）は「アトリエ高菜先生 2周年祭」開催！<a href="/anniversary2026/">詳しくはこちら →</a>
     </p>
   </div>
 </div>
