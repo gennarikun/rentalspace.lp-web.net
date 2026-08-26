@@ -561,6 +561,7 @@
   background: rgba(255,255,255,0.05); border: 1px solid rgba(240,180,41,0.25); border-radius: 18px;
   padding: 32px 26px 28px; text-align: center; position: relative; backdrop-filter: blur(4px);
   transition: transform 0.3s, box-shadow 0.3s;
+  display: flex; flex-direction: column;
 }
 .prize-card:hover { transform: translateY(-6px); box-shadow: 0 14px 40px rgba(0,0,0,0.35); }
 .prize-card.rank-1 { border-color: rgba(240,180,41,0.55); background: linear-gradient(160deg, rgba(240,180,41,0.14), rgba(255,255,255,0.04)); }
@@ -575,7 +576,8 @@
 .prize-card.rank-3 .prize-rank { background: linear-gradient(180deg, #E3B27A, #B5702F); }
 .prize-label { font-family: 'M PLUS Rounded 1c', sans-serif; font-weight: 800; font-size: 12px; letter-spacing: 2px; color: var(--gold-light); margin-bottom: 10px; }
 .prize-name { font-family: 'Shippori Mincho', serif; font-weight: 700; font-size: 17px; color: #fff; line-height: 1.7; margin-bottom: 10px; }
-.prize-sponsor { font-size: 12px; color: rgba(255,246,229,0.55); letter-spacing: 0.5px; }
+.prize-desc { font-size: 13px; color: rgba(255,246,229,0.72); line-height: 1.85; margin-bottom: 16px; }
+.prize-sponsor { font-size: 12px; color: rgba(255,246,229,0.55); letter-spacing: 0.5px; margin-top: auto; }
 .prize-sponsor strong { color: var(--gold-light); font-weight: 700; }
 .prize-image { width: 100%; height: auto; object-fit: contain; border-radius: 12px; margin: 0 auto 16px; display: block; box-shadow: 0 6px 18px rgba(0,0,0,0.3); }
 
@@ -693,7 +695,7 @@
         <div class="feature-card reveal reveal-delay-4">
           <span class="feature-emoji"><img src="https://rentalspace.lp-web.net/assets/HNdMo-ibMAAwWqE.jpg" alt="高菜先生"></span>
           <h3 class="feature-title">ビンゴ大会（昼・夜 2回）</h3>
-          <p class="feature-desc">昼13:30と夜18:00の2回開催。楽くん・ヤマフジ協賛の豪華景品が当たるチャンス！食事券・すりだね・オリジナルグッズなどが当たります。</p>
+          <p class="feature-desc">昼13:30と夜18:00の2回開催。株式会社楽く〜ん様・株式会社ヤマフジ様協賛の豪華景品が当たるチャンス！食事券・すりだね・オリジナルグッズなどが当たります。</p>
         </div>
       </div>
     </div>
@@ -734,25 +736,27 @@
       <div class="section-label reveal">Bingo Tournament</div>
       <h2 class="section-title reveal">ビンゴ大会 豪華景品</h2>
       <div class="section-divider reveal"></div>
-      <p class="bingo-lead reveal">昼13:30・夜18:00の2回開催。楽くん・ヤマフジ協賛の豪華景品が当たるチャンスをお見逃しなく！</p>
+      <p class="bingo-lead reveal">昼13:30・夜18:00の2回開催。株式会社楽く〜ん様・株式会社ヤマフジ様協賛の豪華景品が当たるチャンスをお見逃しなく！</p>
       <div class="prize-grid reveal">
         <div class="prize-card rank-1">
           <div class="prize-rank">1位</div>
           <div class="prize-label">GRAND PRIZE</div>
           <img class="prize-image" src="https://rentalspace.lp-web.net/assets/gift.png" alt="ビンゴ大会景品">
           <div class="prize-name">ハウスクリーニング1万円分の商品券<br>または<br>エアコン1台掃除無料</div>
-          <div class="prize-sponsor">協賛：<strong>株式会社楽く～ん</strong></div>
+          <div class="prize-sponsor">協賛：<strong>株式会社楽く〜ん様</strong></div>
         </div>
         <div class="prize-card rank-2">
           <div class="prize-rank">2位</div>
           <div class="prize-label">SECOND PRIZE</div>
-          <div class="prize-name">高菜先生食堂<br>お食事無料券</div>
-          <div class="prize-sponsor">提供：<strong>アトリエ高菜先生</strong></div>
+          <div class="prize-name">ヤマフジ様の商品</div>
+          <p class="prize-desc">山梨の観光土産を手がけるヤマフジ様セレクトの逸品。何が届くかは当日のお楽しみに！</p>
+          <div class="prize-sponsor">提供：<strong>株式会社ヤマフジ様</strong></div>
         </div>
         <div class="prize-card rank-3">
           <div class="prize-rank">3位</div>
           <div class="prize-label">THIRD PRIZE</div>
           <div class="prize-name">すりだね・高菜先生グッズ<br>贈呈</div>
+          <p class="prize-desc">地元・富士吉田の郷土調味料“すりだね”と、看板猫 高菜先生のオリジナルグッズをセットで。</p>
           <div class="prize-sponsor">提供：<strong>アトリエ高菜先生</strong></div>
         </div>
       </div>
@@ -766,20 +770,20 @@
       <h2 class="section-title reveal">協賛企業のご紹介</h2>
       <div class="section-divider reveal"></div>
       <div class="sponsor-card reveal">
-        <div class="sponsor-logo"><img src="https://rentalspace.lp-web.net/assets/logor.png" alt="株式会社楽く～ん"></div>
+        <div class="sponsor-logo"><img src="https://rentalspace.lp-web.net/assets/logor.png" alt="株式会社楽く〜ん様"></div>
         <div>
           <div class="sponsor-badge">協賛企業</div>
-          <h3 class="sponsor-name">株式会社楽く〜ん</h3>
+          <h3 class="sponsor-name">株式会社楽く〜ん様</h3>
           <p class="sponsor-desc">
-            株式会社楽く～んは、中央市を拠点に山梨県全域で地域密着型の多角的サービスを展開する企業です。エアコンクリーニングやリフォーム、外壁塗装、外構・造園工事をはじめ、不用品回収や遺品整理など、不動産部門の運営や地域活性化を目標としたサッカースクールの運営も行っており、住環境の整備から地域活性化まで多方面で社会に貢献しています。
+            株式会社楽く〜んは、中央市を拠点に山梨県全域で地域密着型の多角的サービスを展開する企業です。エアコンクリーニングやリフォーム、外壁塗装、外構・造園工事をはじめ、不用品回収や遺品整理など、不動産部門の運営や地域活性化を目標としたサッカースクールの運営も行っており、住環境の整備から地域活性化まで多方面で社会に貢献しています。
           </p>
         </div>
       </div>
       <div class="sponsor-card reveal">
-        <div class="sponsor-logo"><img src="/assets/yamafuji_logo_20260824.webp" alt="株式会社ヤマフジ"></div>
+        <div class="sponsor-logo"><img src="/assets/yamafuji_logo_20260824.webp" alt="株式会社ヤマフジ様"></div>
         <div>
           <div class="sponsor-badge">協賛企業</div>
-          <h3 class="sponsor-name">株式会社ヤマフジ</h3>
+          <h3 class="sponsor-name">株式会社ヤマフジ様</h3>
           <p class="sponsor-desc">
             株式会社ヤマフジは、甲府市を拠点に山梨の観光土産品や特産品を扱う総合土産問屋です。シャインマスカットを使ったお菓子やご当地カレー、山梨素材のご飯のおともなど、多彩な商品の企画・開発・販売を手がけています。「ユニークな商品で人と人を繋ぐ」を掲げ、“旅のお裾分け”の文化を広げるとともに、地産地消を推進する取り組みを通じて、山梨の魅力を県内外へ届けています。今回のビンゴ大会では景品をご提供いただきました。
           </p>
