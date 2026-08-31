@@ -1015,6 +1015,16 @@ include 'header.php';
 </div>
 </div>
 </div>
+<div class="ats-service-card"><img alt="猫カフェ帰りに向かいの富士家で楽しめる約30分の手作り体験" class="aligncenter size-full" decoding="async" height="720" loading="lazy" src="./assets/cafeflow_suridane_couple_workshop.jpg" width="960"/>
+<div class="ats-service-overlay"></div>
+<div class="ats-service-content">
+<h3 class="ats-service-title">カフェタイム体験のご紹介</h3>
+<div class="ats-service-desc">
+                            猫と過ごした後は、向かいの「富士家」で約30分の手作り体験はいかがですか。七味・すりだね作りや黒蜜きな粉餅・鯛焼き作りなど、自分で作ったおみやげをそのまま持ち帰れます。<br/>
+<a href="https://houtoutaiken.lp-web.net/cafe/" class="ats-service-link">VIEW MORE →</a>
+</div>
+</div>
+</div>
 </div>
 </div>
 <div class="ats-separator ats-sep-white"><svg height="60" preserveaspectratio="none" viewbox="0 0 1440 60" width="100%" xmlns="http://www.w3.org/2000/svg">
