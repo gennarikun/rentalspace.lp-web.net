@@ -4,3 +4,6 @@ __pycache__/
 _style.css
 _script.js
 *.key
+
+# scratch mockups (別セッション作業用・追跡しない)
+_cafeflow_*.html
