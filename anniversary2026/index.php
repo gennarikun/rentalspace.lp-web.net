@@ -201,7 +201,32 @@
       letter-spacing: 3px; margin-bottom: 8px;
       animation: fadeSlideDown 0.8s 0.5s ease both;
     }
-    .hero-time { font-size: clamp(13px, 2.2vw, 16px); color: rgba(255,246,229,0.65); letter-spacing: 2px; margin-bottom: 44px; animation: fadeSlideDown 0.8s 0.6s ease both; }
+    .hero-time { font-size: clamp(13px, 2.2vw, 16px); color: rgba(255,246,229,0.65); letter-spacing: 2px; margin-bottom: 22px; animation: fadeSlideDown 0.8s 0.6s ease both; }
+
+    .hero-program {
+      display: block; text-align: left; width: 100%; max-width: 500px; margin: 0 auto 32px;
+      background: rgba(255,255,255,0.06); border: 1px solid rgba(240,180,41,0.55);
+      border-radius: 12px; padding: 8px 22px;
+      animation: fadeSlideDown 0.8s 0.65s ease both;
+    }
+    .hero-program .hp-row {
+      display: flex; gap: 14px; align-items: baseline;
+      font-family: 'Shippori Mincho', serif; color: var(--cream);
+      font-size: clamp(13px, 2.3vw, 15px); line-height: 1.6; letter-spacing: 0.5px;
+      padding: 9px 0;
+    }
+    .hero-program .hp-row + .hp-row { border-top: 1px solid rgba(255,255,255,0.10); }
+    .hero-program .hp-time {
+      flex-shrink: 0; min-width: 104px; color: var(--gold-light); font-weight: 700; font-size: 0.92em;
+    }
+    .hero-program .hp-what { flex: 1; }
+    .hero-program strong { color: var(--gold-light); font-weight: 800; }
+    /* 狭幅は「時間」を小見出しにして内容を全幅で縦積み（2カラム潰れ回避） */
+    @media (max-width: 420px) {
+      .hero-program { padding: 6px 16px; }
+      .hero-program .hp-row { flex-direction: column; gap: 3px; align-items: stretch; padding: 10px 0; }
+      .hero-program .hp-time { min-width: 0; font-size: 0.95em; }
+    }
 
     .hero-cta {
       display: inline-block; background: var(--red); color: #fff;
@@ -640,8 +665,12 @@
       <p class="hero-tiger">アトリエ高菜先生</p>
       <h1 class="hero-title">2周年祭</h1>
       <div class="hero-ribbon">日頃の感謝をこめて</div>
-      <p class="hero-date">2026年9月23日（水・祝）</p>
-      <p class="hero-time">昼の部 12:00〜 ／ 夜の部 17:00〜　アトリエ高菜先生</p>
+      <p class="hero-date">2026年9月23日（水・祝）＠アトリエ高菜先生</p>
+      <div class="hero-program">
+        <div class="hp-row"><span class="hp-time">昼の部 12:00〜</span><span class="hp-what">こども食堂・お好み焼き<strong>無料</strong>配布・たい焼き作り体験</span></div>
+        <div class="hp-row"><span class="hp-time">夜の部 17:00〜</span><span class="hp-what">海鮮BBQ</span></div>
+        <div class="hp-row"><span class="hp-time">昼夜とも</span><span class="hp-what">ビンゴ大会</span></div>
+      </div>
       <a href="#entry" class="hero-cta">参加を予約する</a>
       <div class="hero-scroll">SCROLL</div>
     </div>
