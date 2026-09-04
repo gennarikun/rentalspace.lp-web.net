@@ -58,7 +58,7 @@
     .lp-hdr-toggle { display: none; }
     @media (max-width: 900px) {
       .lp-hdr { position: relative; }
-      .lp-hdr-toggle { display: flex; flex-direction: column; justify-content: center; gap: 5px; width: 46px; height: 40px; padding: 0 11px; background: #fff; border: 1px solid rgba(0,0,0,0.14); border-radius: 8px; cursor: pointer; }
+      .lp-hdr-toggle { display: flex; flex-direction: column; justify-content: center; gap: 5px; width: 46px; height: 44px; padding: 0 11px; background: #fff; border: 1px solid rgba(0,0,0,0.14); border-radius: 8px; cursor: pointer; }
       .lp-hdr-toggle span { display: block; height: 2px; background: #2A1B10; border-radius: 2px; transition: 0.3s; }
       .lp-hdr-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
       .lp-hdr-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
@@ -71,7 +71,7 @@
     .lp-fab { position: fixed; right: 18px; bottom: 18px; z-index: 90; display: inline-flex; align-items: center; gap: 8px; background: #06C755; color: #fff; font-family: 'M PLUS Rounded 1c', sans-serif; font-weight: 700; font-size: 14px; padding: 12px 20px; border-radius: 50px; text-decoration: none; box-shadow: 0 6px 20px rgba(0,0,0,0.28); transition: transform 0.2s, box-shadow 0.2s; }
     .lp-fab:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(0,0,0,0.32); }
     .lp-fab svg { flex-shrink: 0; }
-    @media (max-width: 480px) { .lp-fab { right: 14px; bottom: 14px; padding: 11px 16px; font-size: 13px; } }
+    @media (max-width: 480px) { .lp-fab { right: 14px; bottom: 14px; padding: 12px 16px; font-size: 13px; } }
     .nav-logo { font-family: 'Shippori Mincho', serif; font-weight: 700; color: var(--gold-light); font-size: 15px; letter-spacing: 2px; }
     .nav-links { display: flex; align-items: center; gap: 22px; }
     .nav-link { color: rgba(255,246,229,0.75); text-decoration: none; font-size: 13px; letter-spacing: 1px; transition: color 0.2s; }
@@ -631,7 +631,7 @@
 </head>
 <body>
 <header class="lp-hdr">
-  <a class="lp-hdr-logo" href="/"><img src="/assets/f7b213_FUJIYA-3.png" alt="アトリエ高菜先生"></a>
+  <a class="lp-hdr-logo" href="/"><img src="/assets/f7b213_FUJIYA-3.webp" alt="アトリエ高菜先生"></a>
   <button class="lp-hdr-toggle" id="lpHdrToggle" aria-label="メニューを開く" aria-expanded="false"><span></span><span></span><span></span></button>
   <nav class="lp-hdr-nav" id="lpHdrNav">
     <a href="/weekend-staff">ご飯無料ボランティア</a>
@@ -671,7 +671,7 @@
         <div class="hp-row"><span class="hp-time">夜の部 17:00〜</span><span class="hp-what">海鮮BBQ</span></div>
         <div class="hp-row"><span class="hp-time">昼夜とも</span><span class="hp-what">ビンゴ大会</span></div>
       </div>
-      <a href="#entry" class="hero-cta">参加を予約する</a>
+      <a href="https://line.me/R/ti/p/@577xqlpz?oat_content=url&amp;ts=12201507" target="_blank" rel="noopener" class="hero-cta">LINEで予約する</a>
       <div class="hero-scroll">SCROLL</div>
     </div>
   </section>
@@ -682,7 +682,7 @@
       <h2 class="section-title reveal">おかげさまで2周年。<br>感謝をこめて、まるごとお祭りです。</h2>
       <div class="section-divider reveal"></div>
       <p class="intro-message reveal">
-        <span class="polaroid float-right"><img src="https://rentalspace.lp-web.net/assets/0e45a4_20251017_hogoneko1.png" alt="高菜先生"><span class="polaroid-tag">高菜先生</span></span>
+        <span class="polaroid float-right"><img loading="lazy" decoding="async" src="/assets/0e45a4_20251017_hogoneko1.webp" alt="高菜先生"><span class="polaroid-tag">高菜先生</span></span>
         9月23日、アトリエ高菜先生は2周年を迎えます。いつも猫たちを応援してくださって、本当にありがとうございます。感謝の気持ちをこめて、この日はお昼から夜まで、食事を無料でふるまう感謝祭を開きます。<br><br>
         昼はこども食堂のお好み焼き配布とたい焼き作り体験、夜は海鮮BBQにお鍋。そして昼も夜もビンゴ大会。地域のみんなで、笑って過ごす1日にしましょう。
       </p>
@@ -702,27 +702,27 @@
       <h2 class="section-title reveal">イベントの見どころ</h2>
       <div class="section-divider reveal"></div>
       <p class="timeline-lead reveal" style="color:var(--text-light);margin-bottom:28px;">
-        <span class="polaroid float-left"><img src="https://rentalspace.lp-web.net/assets/takana-sensei.png" alt="高菜先生"><span class="polaroid-tag">見どころ紹介</span></span>
+        <span class="polaroid float-left"><img loading="lazy" decoding="async" src="/assets/takana-sensei.webp" alt="高菜先生"><span class="polaroid-tag">見どころ紹介</span></span>
         こども食堂のお好み焼きから夜の海鮮BBQ、昼夜のビンゴ大会まで。感謝をこめた1日をお楽しみください。
       </p>
       <div class="features-grid">
         <div class="feature-card reveal reveal-delay-1">
-          <span class="feature-emoji"><img src="/assets/okonomiyaki_kodomo_20260824.jpg" alt="こども食堂で無料配布するお好み焼き"></span>
+          <span class="feature-emoji"><img loading="lazy" decoding="async" src="/assets/okonomiyaki_kodomo_20260824.webp" alt="こども食堂で無料配布するお好み焼き"></span>
           <h3 class="feature-title">こども食堂 お好み焼き無料配布</h3>
           <p class="feature-desc">昼の部（12:00〜15:00）、こども食堂としてお好み焼きを無料でふるまいます。<b>※お子さま＋保護者は無料／大人のみのご利用は不可。要予約です。</b></p>
         </div>
         <div class="feature-card reveal reveal-delay-2">
-          <span class="feature-emoji"><img src="https://rentalspace.lp-web.net/assets/adpDSC_6197-.jpg" alt="高菜先生"></span>
+          <span class="feature-emoji"><img loading="lazy" decoding="async" src="/assets/adpDSC_6197-.webp" alt="高菜先生"></span>
           <h3 class="feature-title">たい焼き作り体験（要予約）</h3>
           <p class="feature-desc">自分でつくる、できたてのたい焼き。お子さまに大人気の体験です。昼の部で開催、事前予約制です。</p>
         </div>
         <div class="feature-card reveal reveal-delay-3">
-          <span class="feature-emoji"><img src="/assets/kaisen_bbq_20260824.jpg" alt="夜の海鮮BBQ"></span>
+          <span class="feature-emoji"><img loading="lazy" decoding="async" src="/assets/kaisen_bbq_20260824.webp" alt="夜の海鮮BBQ"></span>
           <h3 class="feature-title">夜は食事会！海鮮BBQ＆お鍋</h3>
           <p class="feature-desc">17:00〜21:00の夜の部は、海鮮BBQ・お鍋・お酒を無料でご用意。みんなで囲む食事会です。</p>
         </div>
         <div class="feature-card reveal reveal-delay-4">
-          <span class="feature-emoji"><img src="https://rentalspace.lp-web.net/assets/HNdMo-ibMAAwWqE.jpg" alt="高菜先生"></span>
+          <span class="feature-emoji"><img loading="lazy" decoding="async" src="/assets/HNdMo-ibMAAwWqE.webp" alt="高菜先生"></span>
           <h3 class="feature-title">ビンゴ大会（昼・夜 2回）</h3>
           <p class="feature-desc">昼13:30と夜18:00の2回開催。株式会社楽く〜ん様・株式会社ヤマフジ様協賛の豪華景品が当たるチャンス！食事券・すりだね・オリジナルグッズなどが当たります。</p>
         </div>
@@ -737,7 +737,7 @@
       <h2 class="section-title reveal">タイムスケジュール</h2>
       <div class="section-divider reveal"></div>
       <p class="timeline-lead reveal">
-        <span class="polaroid dark float-right"><img src="https://rentalspace.lp-web.net/assets/img_c486861a.jpg" alt="高菜先生"><span class="polaroid-tag">子供のころの高菜先生</span></span>
+        <span class="polaroid dark float-right"><img loading="lazy" decoding="async" src="/assets/img_c486861a.webp" alt="高菜先生"><span class="polaroid-tag">子供のころの高菜先生</span></span>
         9月23日（水・祝）1日の流れです。途中参加・途中退場も自由なので、都合の良い時間にお立ち寄りください。<br>
         <b>※お好み焼き配布・たい焼き作り体験は要予約です。</b>雨天は店内、晴天はテラスで開催します。</p>
       <div class="timeline reveal">
@@ -770,7 +770,7 @@
         <div class="prize-card rank-1">
           <div class="prize-rank">1位</div>
           <div class="prize-label">GRAND PRIZE</div>
-          <img class="prize-image" src="https://rentalspace.lp-web.net/assets/gift.png" alt="ビンゴ大会景品">
+          <img loading="lazy" decoding="async" class="prize-image" src="/assets/gift.webp" alt="ビンゴ大会景品">
           <div class="prize-name">ハウスクリーニング1万円分の商品券<br>または<br>エアコン1台掃除無料</div>
           <div class="prize-sponsor">協賛：<strong>株式会社楽く〜ん様</strong></div>
         </div>
@@ -799,7 +799,7 @@
       <h2 class="section-title reveal">協賛企業のご紹介</h2>
       <div class="section-divider reveal"></div>
       <div class="sponsor-card reveal">
-        <div class="sponsor-logo"><img src="https://rentalspace.lp-web.net/assets/logor.png" alt="株式会社楽く〜ん様"></div>
+        <div class="sponsor-logo"><img loading="lazy" decoding="async" src="/assets/logor.webp" alt="株式会社楽く〜ん様"></div>
         <div>
           <div class="sponsor-badge">協賛企業</div>
           <h3 class="sponsor-name">株式会社楽く〜ん様</h3>
@@ -809,7 +809,7 @@
         </div>
       </div>
       <div class="sponsor-card reveal">
-        <div class="sponsor-logo"><img src="/assets/yamafuji_logo_20260824.webp" alt="株式会社ヤマフジ様"></div>
+        <div class="sponsor-logo"><img loading="lazy" decoding="async" src="/assets/yamafuji_logo_20260824.webp" alt="株式会社ヤマフジ様"></div>
         <div>
           <div class="sponsor-badge">協賛企業</div>
           <h3 class="sponsor-name">株式会社ヤマフジ様</h3>
@@ -830,27 +830,27 @@
       <p class="tg-lead reveal">看板猫・高菜先生の普段の姿から、イベントの思い出まで。お気に入りの1枚を見つけてください。</p>
       <div class="tg-grid reveal">
         <div class="tg-item">
-          <img src="https://rentalspace.lp-web.net/assets/c44a22_434124_0.jpg" alt="看板猫・高菜先生">
+          <img loading="lazy" decoding="async" src="/assets/c44a22_434124_0.webp" alt="看板猫・高菜先生">
           <div class="tg-caption">看板猫・高菜先生</div>
         </div>
         <div class="tg-item">
-          <img src="https://rentalspace.lp-web.net/assets/スクリーンショット-2026-02-01-4.00.04.png" alt="アトリエの日常">
+          <img loading="lazy" decoding="async" src="/assets/スクリーンショット-2026-02-01-4.00.04.webp" alt="アトリエの日常">
           <div class="tg-caption">アトリエの日常</div>
         </div>
         <div class="tg-item">
-          <img src="https://rentalspace.lp-web.net/assets/ae11a8_434123_0.jpg" alt="アトリエの日常">
+          <img loading="lazy" decoding="async" src="/assets/ae11a8_434123_0.webp" alt="アトリエの日常">
           <div class="tg-caption">くつろぎタイム</div>
         </div>
         <div class="tg-item">
-          <img src="https://rentalspace.lp-web.net/assets/img_4851b274.png" alt="アトリエの日常">
+          <img loading="lazy" decoding="async" src="/assets/img_4851b274.webp" alt="アトリエの日常">
           <div class="tg-caption">お気に入りの一枚</div>
         </div>
         <div class="tg-item">
-          <img src="https://rentalspace.lp-web.net/assets/0c23ab_1741323936797-1024x684.jpg" alt="アトリエの日常">
+          <img loading="lazy" decoding="async" src="/assets/0c23ab_1741323936797-1024x684.webp" alt="アトリエの日常">
           <div class="tg-caption">みんなでまったり</div>
         </div>
         <div class="tg-item">
-          <img src="https://rentalspace.lp-web.net/assets/FB_IMG_1615800526906.jpg" alt="アトリエの日常">
+          <img loading="lazy" decoding="async" src="/assets/FB_IMG_1615800526906.webp" alt="アトリエの日常">
           <div class="tg-caption">思い出のひととき</div>
         </div>
       </div>
@@ -864,7 +864,7 @@
       <h2 class="section-title reveal">「おなかまコミュニティ」って？</h2>
       <div class="section-divider reveal"></div>
       <p class="community-text reveal">
-        <span class="polaroid dark float-left"><img src="https://rentalspace.lp-web.net/assets/93701d_434121_0.jpg" alt="高菜先生"><span class="polaroid-tag">おなかまと</span></span>
+        <span class="polaroid dark float-left"><img loading="lazy" decoding="async" src="/assets/93701d_434121_0.webp" alt="高菜先生"><span class="polaroid-tag">おなかまと</span></span>
         アトリエ高菜先生には<strong style="color:var(--gold-light)">「おなかまコミュニティ」</strong>があります。<br><br>
         ただの猫好きの集まりを超えて、人生をより面白く、豊かにしていくための「おなかま」づくり。
         2周年祭のような節目のイベントも、その輪を広げる大切な場のひとつです。
@@ -931,24 +931,24 @@
       <p class="photos-lead reveal">河口湖のほとりにある保護猫カフェ。猫たちと一緒に、特別な一日を過ごしましょう。</p>
       <div class="photos-grid reveal">
         <div class="photo-main">
-          <img src="https://rentalspace.lp-web.net/assets/ec55fc_1749032903896.jpg" alt="アトリエ高菜先生 外観">
+          <img loading="lazy" decoding="async" src="/assets/ec55fc_1749032903896.webp" alt="アトリエ高菜先生 外観">
           <div class="photo-caption">アトリエ高菜先生 — 河口湖の保護猫カフェ</div>
         </div>
         <div class="photo-sub">
           <div class="photo-item">
-            <img src="https://rentalspace.lp-web.net/assets/img_e1b15c4e.png" alt="高菜先生">
+            <img loading="lazy" decoding="async" src="/assets/img_e1b15c4e.webp" alt="高菜先生">
             <div class="photo-caption-sm">看板猫・高菜先生</div>
           </div>
           <div class="photo-item">
-            <img src="https://rentalspace.lp-web.net/assets/ae11a8_434123_0.jpg" alt="店内の様子">
+            <img loading="lazy" decoding="async" src="/assets/ae11a8_434123_0.webp" alt="店内の様子">
             <div class="photo-caption-sm">ゆったりくつろげる店内</div>
           </div>
           <div class="photo-item">
-            <img src="https://rentalspace.lp-web.net/assets/af4c2d_1749032903033.jpg" alt="猫カフェの雰囲気">
+            <img loading="lazy" decoding="async" src="/assets/af4c2d_1749032903033.webp" alt="猫カフェの雰囲気">
             <div class="photo-caption-sm">猫たちと自由にふれあえる空間</div>
           </div>
           <div class="photo-item">
-            <img src="https://rentalspace.lp-web.net/assets/3d6dce_20251017_hogoneko5.png" alt="保護猫たち">
+            <img loading="lazy" decoding="async" src="/assets/3d6dce_20251017_hogoneko5.webp" alt="保護猫たち">
             <div class="photo-caption-sm">7匹の保護猫が待っています</div>
           </div>
         </div>
@@ -991,7 +991,7 @@
       <div class="section-divider reveal"></div>
       <div class="message-box reveal">
         <p class="message-text">
-          <span class="polaroid float-right"><img src="https://rentalspace.lp-web.net/assets/31033d_DSC02038-1024x684-1.jpg" alt="高菜先生"><span class="polaroid-tag">高菜先生</span></span>
+          <span class="polaroid float-right"><img loading="lazy" decoding="async" src="/assets/31033d_DSC02038-1024x684-1.webp" alt="高菜先生"><span class="polaroid-tag">高菜先生</span></span>
           アトリエ高菜先生も、おかげさまで2周年を迎えたぜ。<br><br>
           いつも猫たちを応援してくれて、本当にありがとう。<br>
           感謝の気持ちをこめて、当日はみんなにごはんを振る舞うんだ。<br>
@@ -1005,7 +1005,7 @@
   <!-- ========== CTA ========== -->
   <section class="cta-section" id="entry">
     <div class="container">
-      <div class="cta-avatar"><img src="https://rentalspace.lp-web.net/assets/20250618_182532-768x576.jpg" alt="高菜先生"></div>
+      <div class="cta-avatar"><img loading="lazy" decoding="async" src="/assets/20250618_182532-768x576.webp" alt="高菜先生"></div>
       <h2 class="cta-title">さあ、一緒に楽しもう！</h2>
       <p class="cta-sub">
         美味しいごはんを食べながら、猫たちの未来や面白い企画について、<br>
