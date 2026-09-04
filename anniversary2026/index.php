@@ -3,6 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1M24F2XMQH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-1M24F2XMQH');
+  </script>
   <title>アトリエ高菜先生 2周年祭｜感謝祭 2026年9月23日（水・祝）</title>
   <meta name="description" content="アトリエ高菜先生 2周年祭。日頃の猫支援への感謝をこめて、2026年9月23日（水・祝）に食事を無料でふるまう感謝祭を開催。昼はこども食堂のお好み焼き配布・たい焼き作り体験、夜は海鮮BBQ。昼夜ビンゴ大会も。河口湖の保護猫カフェにて。">
   <meta property="og:title" content="アトリエ高菜先生 2周年祭｜感謝祭 2026年9月23日（水・祝）">
