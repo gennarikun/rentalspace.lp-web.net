@@ -466,11 +466,11 @@
     .resv-name { font-family: 'Shippori Mincho', serif; font-size: 19px; font-weight: 800; color: var(--red); margin-bottom: 6px; }
     .resv-time { font-size: 13px; color: var(--text-light); margin-bottom: 14px; }
     .resv-template { font-family: 'M PLUS Rounded 1c', sans-serif; font-size: 13px; line-height: 1.9; color: var(--text); background: var(--cream); border-radius: 10px; padding: 14px 16px; white-space: pre-wrap; word-break: break-word; margin: 0 0 16px; }
-    .resv-line { display: block; text-align: center; background: #06C755; color: #fff; font-family: 'M PLUS Rounded 1c', sans-serif; font-weight: 800; font-size: 16px; padding: 14px 20px; border-radius: 50px; text-decoration: none; box-shadow: 0 6px 18px rgba(6,199,85,0.35); transition: transform 0.2s, box-shadow 0.2s; }
-    .resv-line:hover { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(6,199,85,0.45); }
-    .resv-copy { display: block; width: 100%; margin-top: 10px; background: transparent; color: var(--text); font-family: 'M PLUS Rounded 1c', sans-serif; font-weight: 700; font-size: 14px; padding: 11px 20px; border: 1.5px solid rgba(42,27,16,0.25); border-radius: 50px; cursor: pointer; transition: border-color 0.2s, color 0.2s, background 0.2s; }
-    .resv-copy:hover { border-color: var(--red); color: var(--red); }
+    .resv-copy { display: block; width: 100%; background: #fff; color: var(--red); font-family: 'M PLUS Rounded 1c', sans-serif; font-weight: 800; font-size: 15px; padding: 13px 20px; border: 2px solid var(--red); border-radius: 50px; cursor: pointer; transition: background 0.2s, color 0.2s; }
+    .resv-copy:hover { background: var(--red); color: #fff; }
     .resv-copy.copied { background: var(--gold); border-color: var(--gold); color: var(--charcoal); }
+    .resv-line { display: block; text-align: center; margin-top: 10px; background: #06C755; color: #fff; font-family: 'M PLUS Rounded 1c', sans-serif; font-weight: 800; font-size: 16px; padding: 14px 20px; border-radius: 50px; text-decoration: none; box-shadow: 0 6px 18px rgba(6,199,85,0.35); transition: transform 0.2s, box-shadow 0.2s; }
+    .resv-line:hover { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(6,199,85,0.45); }
 
     /* =================== FOOTER =================== */
     footer { background: var(--charcoal); color: rgba(255,246,229,0.5); text-align: center; padding: 32px 24px; font-size: 13px; line-height: 2; }
@@ -1029,7 +1029,7 @@
       <h2 class="cta-title">ご予約はこちら</h2>
       <p class="cta-sub">
         こども食堂・たい焼き作り体験は事前予約制です。<br>
-        ボタンを押すと入力例が入った状態でLINEが開くので、空欄を埋めて送ってください。
+        「予約文をコピー」を押してからLINEを開き、貼り付けて送ってください。
       </p>
 
       <div class="resv-grid">
@@ -1040,8 +1040,8 @@
 ・時間枠：（12:00／12:30／13:00／13:30／14:00）
 ・人数：大人　名・子ども　名
 ・代表者名：</pre>
-          <a class="resv-line" data-key="taiyaki" href="#" target="_blank" rel="noopener" onclick="gtag('event','line_reserve_click',{location:'entry_taiyaki'})">LINEで予約する</a>
-          <button type="button" class="resv-copy" data-key="taiyaki">文をコピー</button>
+          <button type="button" class="resv-copy" data-key="taiyaki">予約文をコピー</button>
+          <a class="resv-line" href="https://line.me/R/ti/p/@577xqlpz?oat_content=url&amp;ts=12201507" target="_blank" rel="noopener" onclick="gtag('event','line_reserve_click',{location:'entry_taiyaki'})">LINEを開く</a>
         </div>
         <div class="resv-card">
           <h3 class="resv-name">こども食堂（お好み焼き無料）</h3>
@@ -1050,12 +1050,12 @@
 ・お越しの時間：（12:00〜15:00の間）
 ・人数：大人　名・子ども　名
 ・代表者名：</pre>
-          <a class="resv-line" data-key="kodomo" href="#" target="_blank" rel="noopener" onclick="gtag('event','line_reserve_click',{location:'entry_kodomo'})">LINEで予約する</a>
-          <button type="button" class="resv-copy" data-key="kodomo">文をコピー</button>
+          <button type="button" class="resv-copy" data-key="kodomo">予約文をコピー</button>
+          <a class="resv-line" href="https://line.me/R/ti/p/@577xqlpz?oat_content=url&amp;ts=12201507" target="_blank" rel="noopener" onclick="gtag('event','line_reserve_click',{location:'entry_kodomo'})">LINEを開く</a>
         </div>
       </div>
 
-      <p class="cta-note">LINEが開いたらそのまま送信してください。文が入らないときは「文をコピー」を押してLINEに貼り付けてください。</p>
+      <p class="cta-note">はじめての方は友だち追加のうえ、コピーした予約文を送ってください。当日の飛び入りはご遠慮ください。</p>
     </div>
   </section>
 
@@ -1096,16 +1096,11 @@
       }));
     }
 
-    // 予約テンプレ: LINE自動入力リンク生成 ＋ コピーボタン
+    // 予約テンプレのコピー
     (function () {
-      var LINE_OA = 'https://line.me/R/oaMessage/%40577xqlpz/?';
       var tpl = {};
       document.querySelectorAll('.resv-template').forEach(function (el) {
         tpl[el.dataset.key] = el.textContent;
-      });
-      document.querySelectorAll('.resv-line').forEach(function (a) {
-        var t = tpl[a.dataset.key];
-        if (t) a.setAttribute('href', LINE_OA + encodeURIComponent(t));
       });
       document.querySelectorAll('.resv-copy').forEach(function (btn) {
         btn.addEventListener('click', function () {
