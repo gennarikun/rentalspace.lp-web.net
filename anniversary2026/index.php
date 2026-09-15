@@ -459,6 +459,18 @@
     }
     .cta-button:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 12px 40px rgba(0,0,0,0.3); }
     .cta-note { margin-top: 20px; font-size: 13px; color: rgba(255,255,255,0.75); position: relative; z-index: 1; }
+    /* 予約ブロック（体験別カード） */
+    .resv-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 720px; margin: 0 auto; position: relative; z-index: 1; text-align: left; }
+    @media (max-width: 640px) { .resv-grid { grid-template-columns: 1fr; } }
+    .resv-card { background: var(--warm-white); border-radius: 16px; padding: 24px 22px; box-shadow: 0 8px 28px rgba(0,0,0,0.18); }
+    .resv-name { font-family: 'Shippori Mincho', serif; font-size: 19px; font-weight: 800; color: var(--red); margin-bottom: 6px; }
+    .resv-time { font-size: 13px; color: var(--text-light); margin-bottom: 14px; }
+    .resv-template { font-family: 'M PLUS Rounded 1c', sans-serif; font-size: 13px; line-height: 1.9; color: var(--text); background: var(--cream); border-radius: 10px; padding: 14px 16px; white-space: pre-wrap; word-break: break-word; margin: 0 0 16px; }
+    .resv-line { display: block; text-align: center; background: #06C755; color: #fff; font-family: 'M PLUS Rounded 1c', sans-serif; font-weight: 800; font-size: 16px; padding: 14px 20px; border-radius: 50px; text-decoration: none; box-shadow: 0 6px 18px rgba(6,199,85,0.35); transition: transform 0.2s, box-shadow 0.2s; }
+    .resv-line:hover { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(6,199,85,0.45); }
+    .resv-copy { display: block; width: 100%; margin-top: 10px; background: transparent; color: var(--text); font-family: 'M PLUS Rounded 1c', sans-serif; font-weight: 700; font-size: 14px; padding: 11px 20px; border: 1.5px solid rgba(42,27,16,0.25); border-radius: 50px; cursor: pointer; transition: border-color 0.2s, color 0.2s, background 0.2s; }
+    .resv-copy:hover { border-color: var(--red); color: var(--red); }
+    .resv-copy.copied { background: var(--gold); border-color: var(--gold); color: var(--charcoal); }
 
     /* =================== FOOTER =================== */
     footer { background: var(--charcoal); color: rgba(255,246,229,0.5); text-align: center; padding: 32px 24px; font-size: 13px; line-height: 2; }
@@ -679,7 +691,7 @@
         <div class="hp-row"><span class="hp-time">夜の部 17:00〜</span><span class="hp-what">海鮮BBQ</span></div>
         <div class="hp-row"><span class="hp-time">昼夜とも</span><span class="hp-what">ビンゴ大会</span></div>
       </div>
-      <a href="https://line.me/R/ti/p/@577xqlpz?oat_content=url&amp;ts=12201507" target="_blank" rel="noopener" class="hero-cta" onclick="gtag('event','line_reserve_click',{location:'hero'})">LINEで予約する</a>
+      <a href="#entry" class="hero-cta" onclick="gtag('event','reserve_scroll',{location:'hero'})">LINEで予約する</a>
       <div class="hero-scroll">SCROLL</div>
     </div>
   </section>
@@ -1014,13 +1026,36 @@
   <section class="cta-section" id="entry">
     <div class="container">
       <div class="cta-avatar"><img loading="lazy" decoding="async" src="/assets/20250618_182532-768x576.webp" alt="高菜先生"></div>
-      <h2 class="cta-title">さあ、一緒に楽しもう！</h2>
+      <h2 class="cta-title">ご予約はこちら</h2>
       <p class="cta-sub">
-        美味しいごはんを食べながら、猫たちの未来や面白い企画について、<br>
-        肩肘張らずに語り合いましょう。
+        こども食堂・たい焼き作り体験は事前予約制です。<br>
+        ボタンを押すと入力例が入った状態でLINEが開くので、空欄を埋めて送ってください。
       </p>
-      <a href="https://line.me/R/ti/p/@577xqlpz?oat_content=url&amp;ts=12201507" target="_blank" rel="noopener" class="cta-button" onclick="gtag('event','line_reserve_click',{location:'entry'})">LINEで予約する</a>
-      <p class="cta-note">※ お好み焼き配布・たい焼き作り体験は要予約です。LINEからお気軽にご連絡ください</p>
+
+      <div class="resv-grid">
+        <div class="resv-card">
+          <h3 class="resv-name">たい焼き作り体験</h3>
+          <p class="resv-time">受付 12:00〜14:00（30分ごと・最終14:00）</p>
+          <pre class="resv-template" data-key="taiyaki">たい焼き作り体験 希望
+・時間枠：（12:00／12:30／13:00／13:30／14:00）
+・人数：大人　名・子ども　名
+・代表者名：</pre>
+          <a class="resv-line" data-key="taiyaki" href="#" target="_blank" rel="noopener" onclick="gtag('event','line_reserve_click',{location:'entry_taiyaki'})">LINEで予約する</a>
+          <button type="button" class="resv-copy" data-key="taiyaki">文をコピー</button>
+        </div>
+        <div class="resv-card">
+          <h3 class="resv-name">こども食堂（お好み焼き無料）</h3>
+          <p class="resv-time">12:00〜15:00の間はいつでも</p>
+          <pre class="resv-template" data-key="kodomo">こども食堂 希望
+・お越しの時間：（12:00〜15:00の間）
+・人数：大人　名・子ども　名
+・代表者名：</pre>
+          <a class="resv-line" data-key="kodomo" href="#" target="_blank" rel="noopener" onclick="gtag('event','line_reserve_click',{location:'entry_kodomo'})">LINEで予約する</a>
+          <button type="button" class="resv-copy" data-key="kodomo">文をコピー</button>
+        </div>
+      </div>
+
+      <p class="cta-note">LINEが開いたらそのまま送信してください。文が入らないときは「文をコピー」を押してLINEに貼り付けてください。</p>
     </div>
   </section>
 
@@ -1060,6 +1095,43 @@
         hdrToggle.setAttribute('aria-expanded', 'false');
       }));
     }
+
+    // 予約テンプレ: LINE自動入力リンク生成 ＋ コピーボタン
+    (function () {
+      var LINE_OA = 'https://line.me/R/oaMessage/%40577xqlpz/?';
+      var tpl = {};
+      document.querySelectorAll('.resv-template').forEach(function (el) {
+        tpl[el.dataset.key] = el.textContent;
+      });
+      document.querySelectorAll('.resv-line').forEach(function (a) {
+        var t = tpl[a.dataset.key];
+        if (t) a.setAttribute('href', LINE_OA + encodeURIComponent(t));
+      });
+      document.querySelectorAll('.resv-copy').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var t = tpl[btn.dataset.key] || '';
+          var done = function () {
+            var orig = btn.getAttribute('data-label') || btn.textContent;
+            btn.setAttribute('data-label', orig);
+            btn.textContent = 'コピーしました';
+            btn.classList.add('copied');
+            setTimeout(function () { btn.textContent = orig; btn.classList.remove('copied'); }, 1800);
+          };
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(t).then(done, function () { fallbackCopy(t, done); });
+          } else {
+            fallbackCopy(t, done);
+          }
+        });
+      });
+      function fallbackCopy(text, cb) {
+        var ta = document.createElement('textarea');
+        ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+        document.body.appendChild(ta); ta.select();
+        try { document.execCommand('copy'); cb(); } catch (e) {}
+        document.body.removeChild(ta);
+      }
+    })();
   </script>
 
   <a href="https://line.me/R/ti/p/@577xqlpz?oat_content=url&amp;ts=12201507" target="_blank" rel="noopener" class="lp-fab" aria-label="LINEでお問い合わせ" onclick="gtag('event','line_reserve_click',{location:'fab'})">
