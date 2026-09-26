@@ -17,7 +17,7 @@
   <meta property="og:description" content="日頃の感謝をこめて食事を無料でふるまう感謝祭。昼はこども食堂お好み焼き・たい焼き作り体験、夜は海鮮BBQ、昼夜ビンゴ大会。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://rentalspace.lp-web.net/anniversary2026/">
-  <meta name="robots" content="index,follow">
+  <meta name="robots" content="noindex,follow"><!-- 2026-09-26 イベント終了: 検索に出さない・ページは今後のイベントで使い回すため残す -->
   <link rel="canonical" href="https://rentalspace.lp-web.net/anniversary2026/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600;700;800&family=M+PLUS+Rounded+1c:wght@400;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">

@@ -8,45 +8,6 @@ include 'head-common.php';
 include 'header.php';
 ?>
 <style>
-/* ==== お知らせバー（9/23 2周年祭告知） ==== */
-.ats-announce-bar {
-  background: linear-gradient(90deg, #8C1D28, #D7263D);
-  color: #fff;
-  padding: 10px 16px;
-  text-align: center;
-}
-.ats-announce-inner {
-  max-width: 960px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-.ats-announce-badge {
-  background: #F0B429;
-  color: #060A24;
-  font-weight: 800;
-  font-size: 12px;
-  padding: 3px 10px;
-  border-radius: 20px;
-  letter-spacing: 1px;
-}
-.ats-announce-text {
-  font-size: 14px;
-  font-weight: 600;
-  margin: 0;
-}
-.ats-announce-text a {
-  color: #FBDD8B;
-  text-decoration: underline;
-  font-weight: 800;
-}
-@media (max-width: 480px) {
-  .ats-announce-text { font-size: 12px; }
-}
-
 /* ==== 代表＆高菜先生紹介セクション（空白解消） ==== */
 .ats-story-block {
   margin-bottom: 64px;
@@ -292,15 +253,6 @@ include 'header.php';
 }
 </style>
 
-<div class="ats-announce-bar">
-  <div class="ats-announce-inner">
-    <span class="ats-announce-badge">お知らせ</span>
-    <p class="ats-announce-text">
-      9月23日（水・祝）は「アトリエ高菜先生 2周年祭」開催！<a href="/anniversary2026/">詳しくはこちら →</a>
-    </p>
-  </div>
-</div>
-
 <div class="section siteContent">
 <div class="container">
 <div class="row">
@@ -326,7 +278,7 @@ include 'header.php';
 <ul class="ats-news-list">
 <li class="ats-news-item">
 <span class="ats-news-tag">お知らせ</span>
-<p class="ats-news-text">利用時間変更のお知らせ：これまでの11:00〜17:00から、<strong class="ats-text-accent">13:00〜18:00</strong>に変更いたします。</p>
+<p class="ats-news-text">営業時間変更のお知らせ：<strong class="ats-text-accent">平日 11:00〜16:00／土日祝 12:00〜17:00</strong>に変更いたします。定休日は木曜日です（祝日の場合は営業）。</p>
 </li>
 </ul>
 </div>
@@ -842,7 +794,7 @@ include 'header.php';
 </div>
 <div class="ats-faq-item">
 <div class="ats-faq-q"><span class="ats-faq-q-icon">Q</span>利用時間は何時から何時までですか？</div>
-<div class="ats-faq-a">当店の利用時間は13:00〜18:00です。</div>
+<div class="ats-faq-a">当店の利用時間は平日11:00〜16:00、土日祝12:00〜17:00です。定休日は木曜日です（祝日の場合は営業）。</div>
 </div>
 <div class="ats-faq-item">
 <div class="ats-faq-q"><span class="ats-faq-q-icon">Q</span>Wi-Fiはどのような環境でしょうか？</div>
@@ -1150,16 +1102,16 @@ include 'header.php';
 <tr>
 <th>予約</th>
 <td>不要<br/>
-<span style="font-size: 0.9em;">（ほぼ年中無休で営業しておりますが、確実にご利用になりたいという方は事前のお問い合わせをお願い致します。）</span>
+<span style="font-size: 0.9em;">（木曜日は定休日です。確実にご利用になりたい方は事前のお問い合わせをお願い致します。）</span>
 </td>
 </tr>
 <tr>
 <th>利用時間</th>
-<td>13:00~18:00</td>
+<td>平日 11:00~16:00<br>土日祝 12:00~17:00</td>
 </tr>
 <tr>
 <th>定休日</th>
-<td>不定休</td>
+<td>木曜日（祝日の場合は営業）</td>
 </tr>
 <tr>
 <th>催行人数</th>
